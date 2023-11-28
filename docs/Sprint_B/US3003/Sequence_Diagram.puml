@@ -1,0 +1,41 @@
+@startuml
+title SD - Shared Board Use Case
+
+actor User as actor
+
+actor -> ui: use shared board
+activate ui
+ui -> controller: require process creation
+deactivate ui
+activate controller
+controller -> service: start process
+deactivate controller
+activate service
+service -> service: create semaphores
+activate service
+deactivate service
+service -> service: create processes
+
+activate service
+deactivate service
+service -> memory: write / read
+activate memory
+memory -> memory: write / read each
+service -> service: wait
+activate service
+deactivate service
+memory -> service: results
+deactivate memory
+service -> controller: show results
+deactivate service
+activate controller
+controller -> ui: show results
+deactivate controller
+activate ui
+ui -> actor: show results
+deactivate ui
+
+
+
+
+@enduml

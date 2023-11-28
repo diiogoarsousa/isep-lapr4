@@ -1,0 +1,21 @@
+@startuml
+
+class ListAvailableCourseService {
+  + getAvailableCourses(): List<Course>
+}
+
+class CourseRepository {
+  + findAll(): List<Course>
+}
+
+enum CourseStateEnum
+
+class Course {
+  - state: CourseStateEnum
+}
+
+ListAvailableCourseService --> CourseRepository
+CourseRepository --> Course
+Course --> CourseStateEnum
+
+@enduml

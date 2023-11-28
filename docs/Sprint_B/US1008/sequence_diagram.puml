@@ -1,0 +1,34 @@
+@startuml
+
+actor Student
+Student -> RequestEnrollmentInCourseUI: doShow()
+activate RequestEnrollmentInCourseUI
+RequestEnrollmentInCourseUI -> RequestEnrollmentInCourseController: listReadyToEnrollCourses()
+deactivate RequestEnrollmentInCourseUI
+activate RequestEnrollmentInCourseController
+RequestEnrollmentInCourseController -> ListCourseService: requestEnrollmentInCourse
+activate ListCourseService
+ListCourseService -> CourseRepository: findById()
+activate CourseRepository
+CourseRepository --> ListCourseService: Course
+deactivate CourseRepository
+ListCourseService -> RequestEnrollmentInCourseController: displayCourseList()
+deactivate ListCourseService
+deactivate RequestEnrollmentInCourseController
+RequestEnrollmentInCourseController -> RequestEnrollmentInCourseUI: getEnrollCourses()
+activate RequestEnrollmentInCourseUI
+Student -> RequestEnrollmentInCourseUI: selectCourse()
+RequestEnrollmentInCourseUI -> RequestEnrollmentInCourseController: requestEnrollmentInCourse()
+activate RequestEnrollmentInCourseController
+RequestEnrollmentInCourseController -> ListCourseService: requestEnrollment()
+activate ListCourseService
+ListCourseService -> EnrollmentsInCourseRepository: save()
+activate EnrollmentsInCourseRepository
+EnrollmentsInCourseRepository --> ListCourseService: Enrollment
+deactivate EnrollmentsInCourseRepository
+deactivate ListCourseService
+RequestEnrollmentInCourseController --> RequestEnrollmentInCourseUI: Enrollment successful
+deactivate RequestEnrollmentInCourseController
+deactivate RequestEnrollmentInCourseUI
+
+@enduml

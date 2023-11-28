@@ -1,0 +1,56 @@
+@startuml
+class Manager {
+    +OpenCloseEnrollmentsMenu()
+    +buildOpenCloseEnrollmentsMenu()
+}
+
+class OpenCloseEnrollmentsMenu {
+    +OpenCloseEnrollmentsMenu()
+    +buildOpenCloseEnrollmentsMenu()
+}
+
+class OpenEnrollmentsUI {
+    +doShow()
+    +headline()
+    +openEnrollments()
+    +selectCourse()
+}
+
+class CloseEnrollmentsUI {
+    +doShow()
+    +headline()
+    +closeEnrollments()
+    +selectCourse()
+}
+
+class OpenCloseEnrollmentsController {
+    +allCourses()
+    +changeCourseState()
+    +findCourseByStateInEnrollments()
+}
+
+class ListCourseToEnrollmentService {
+    +allCourses()
+    +changeEnrollmentState()
+    +findCourseByStateInEnrollments()
+}
+
+class CourseRepository {
+    +findCourseByState()
+    +findCourse()
+}
+
+class Course {
+    +setEnrollmentStatus()
+}
+
+Manager -> OpenCloseEnrollmentsMenu
+OpenCloseEnrollmentsMenu -> OpenEnrollmentsUI
+OpenCloseEnrollmentsMenu -> CloseEnrollmentsUI
+CloseEnrollmentsUI -> OpenCloseEnrollmentsController
+OpenEnrollmentsUI -> OpenCloseEnrollmentsController
+OpenCloseEnrollmentsController -> ListCourseToEnrollmentService
+ListCourseToEnrollmentService -> CourseRepository
+CourseRepository -> Course
+
+@enduml

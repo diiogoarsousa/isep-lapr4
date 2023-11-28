@@ -1,0 +1,25 @@
+@startuml
+
+skinparam SequenceMessageAlignment center
+autonumber
+actor "Student" as USER
+
+participant ":ListGradesUI" as UI
+participant ":ListGradesController" as CRTL
+participant ":ExamTakenRepository" as REP
+
+USER -> UI : asks to view a list of my grades
+activate UI
+UI -> CRTL : listMyGrades()
+activate CRTL
+CRTL -> REP: findGradesByUser(SystemUser)
+activate REP
+REP -> CRTL : Result
+deactivate REP
+CRTL -> UI : Result
+deactivate CRTL
+UI -> USER : show grades list
+deactivate UI
+
+
+@enduml

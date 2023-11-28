@@ -1,0 +1,53 @@
+@startuml
+skinparam shadowing true
+skinparam alignement left
+skinparam nodesep 10
+skinparam ranksep 200
+skinparam packageStyle rect
+skinparam allow_mixing false
+skinparam backgroundColor #EEEBDC
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam defaultFontColor #0000FF
+left to right direction
+
+:Manager: --> (Create Course)
+:Manager: --> (Edit Course)
+:Manager: --> (Delete Course)
+:Teacher: --> (View Course)
+:Teacher: --> (Create Course Content)
+:Teacher: --> (Edit Course Content)
+:Student: --> (View Course)
+
+:Manager: --> (Create Enrollment)
+:Manager: --> (Edit Enrollment)
+:Manager: --> (Delete Enrollment)
+:Teacher: --> (View Enrollment)
+:Student: --> (View Enrollment)
+:Student: --> (Enroll in Course)
+
+:Manager: --> (Create Exam)
+:Manager: --> (Edit Exam)
+:Manager: --> (Delete Exam)
+:Teacher: --> (View Exam)
+:Teacher: --> (Create Exam Content)
+:Teacher: --> (Edit Exam Content)
+:Student: --> (View Exam)
+:Student: --> (Take Exam)
+
+:Manager: --> (Create Meeting)
+:Manager: --> (Edit Meeting)
+:Manager: --> (Delete Meeting)
+:Teacher: --> (View Meeting)
+:Student: --> (View Meeting)
+:Student: --> (Participate in Meeting)
+
+:Manager: --> (Create Board)
+:Manager: --> (Edit Board)
+:Manager: --> (Delete Board)
+:Teacher: --> (View Board)
+:Teacher: --> (Create Post-it)
+:Teacher: --> (Edit Post-it)
+:Student: --> (View Board)
+
+@enduml

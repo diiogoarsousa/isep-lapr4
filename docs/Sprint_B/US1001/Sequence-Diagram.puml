@@ -1,0 +1,61 @@
+@startuml
+
+skinparam SequenceMessageAlignment center
+autonumber
+actor "Manager" as MANAGER
+
+participant ":AddUserUI" as UI
+participant ":AddUserController" as CRTL
+participant ":BaseRoles" as ROLES
+participant ":AuthorizationService" as AUZ
+participant ":UserManagementService" as US
+participant ":UserRepository" as USR
+
+activate MANAGER
+
+
+activate MANAGER
+
+MANAGER -> UI : asks to create a new User
+activate UI
+
+UI -> MANAGER : requests data (Username, Password, First Name, Last Name, E-Mail )
+deactivate UI
+MANAGER -> UI : type requested data
+activate UI
+UI -> UI : showRoles(roleTypes)
+UI -> UI : buildRolesMenu(roleTypes);
+UI -> CRTL : getRoleTypes()
+activate CRTL
+CRTL-> ROLES : nonUserValues()
+activate ROLES
+ROLES -> CRTL : roleList
+deactivate ROLES
+CRTL -> UI : roleList
+deactivate CRTL
+UI -> MANAGER : requests role
+deactivate UI
+MANAGER -> UI : select a role
+activate UI
+UI -> CRTL : addUser(data)
+activate CRTL
+CRTL -> AUZ : ensureAuthenticatedUserHasAnyOf(BaseRoles.MANAGER)
+activate AUZ
+AUZ -> CRTL : Result
+deactivate AUZ
+CRTL -> US : registerNewUser(data)
+activate US
+US -> USR : save(newUser)
+activate USR
+USR -> US : Result
+deactivate USR
+US -> CRTL : Result
+deactivate US
+CRTL -> UI : Result
+deactivate CRTL
+UI -> MANAGER : Operation Sucess
+deactivate UI
+
+
+
+@enduml

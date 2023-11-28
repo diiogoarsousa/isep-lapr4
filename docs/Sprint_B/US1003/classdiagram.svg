@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css"
+     height="180px" preserveAspectRatio="none" style="width:1972px;height:180px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 1972 180" width="1972px" zoomAndPan="magnify">
+    <defs/>
+    <g><!--class Manager-->
+        <g id="elem_Manager">
+            <rect codeLine="1" fill="#F1F1F1" height="80.9766" id="Manager" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="266" x="7" y="75.62"/>
+            <ellipse cx="105.75" cy="91.62" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M108.7231,97.2631 Q108.1421,97.5619 107.5029,97.7113 Q106.8638,97.8607 106.1582,97.8607 Q103.6514,97.8607 102.3315,96.2089 Q101.0117,94.557 101.0117,91.4359 Q101.0117,88.3065 102.3315,86.6547 Q103.6514,85.0028 106.1582,85.0028 Q106.8638,85.0028 107.5112,85.1522 Q108.1587,85.3016 108.7231,85.6005 L108.7231,88.3231 Q108.0923,87.7421 107.4988,87.4723 Q106.9053,87.2025 106.2744,87.2025 Q104.9297,87.2025 104.2449,88.2692 Q103.5601,89.3358 103.5601,91.4359 Q103.5601,93.5277 104.2449,94.5944 Q104.9297,95.661 106.2744,95.661 Q106.9053,95.661 107.4988,95.3912 Q108.0923,95.1215 108.7231,94.5404 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60"
+                  x="126.25" y="96.911">Manager
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="272" y1="107.62" y2="107.62"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="272" y1="115.62" y2="115.62"/>
+            <ellipse cx="18" cy="129.3641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="27"
+                  y="133.1552">OpenCloseEnrollmentsMenu()
+            </text>
+            <ellipse cx="18" cy="145.8524" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="27"
+                  y="149.6434">buildOpenCloseEnrollmentsMenu()
+            </text>
+        </g><!--class OpenCloseEnrollmentsMenu-->
+        <g id="elem_OpenCloseEnrollmentsMenu">
+            <rect codeLine="6" fill="#F1F1F1" height="80.9766" id="OpenCloseEnrollmentsMenu" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="266" x="308" y="75.62"/>
+            <ellipse cx="340.55" cy="91.62" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M343.5231,97.2631 Q342.9421,97.5619 342.3029,97.7113 Q341.6638,97.8607 340.9582,97.8607 Q338.4514,97.8607 337.1315,96.2089 Q335.8117,94.557 335.8117,91.4359 Q335.8117,88.3065 337.1315,86.6547 Q338.4514,85.0028 340.9582,85.0028 Q341.6638,85.0028 342.3112,85.1522 Q342.9587,85.3016 343.5231,85.6005 L343.5231,88.3231 Q342.8923,87.7421 342.2988,87.4723 Q341.7053,87.2025 341.0744,87.2025 Q339.7297,87.2025 339.0449,88.2692 Q338.3601,89.3358 338.3601,91.4359 Q338.3601,93.5277 339.0449,94.5944 Q339.7297,95.661 341.0744,95.661 Q341.7053,95.661 342.2988,95.3912 Q342.8923,95.1215 343.5231,94.5404 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195"
+                  x="358.45" y="96.911">OpenCloseEnrollmentsMenu
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="309" x2="573" y1="107.62" y2="107.62"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="309" x2="573" y1="115.62" y2="115.62"/>
+            <ellipse cx="319" cy="129.3641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="328"
+                  y="133.1552">OpenCloseEnrollmentsMenu()
+            </text>
+            <ellipse cx="319" cy="145.8524" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="328"
+                  y="149.6434">buildOpenCloseEnrollmentsMenu()
+            </text>
+        </g><!--class OpenEnrollmentsUI-->
+        <g id="elem_OpenEnrollmentsUI">
+            <rect codeLine="11" fill="#F1F1F1" height="113.9531" id="OpenEnrollmentsUI" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="165" x="810.5" y="59.12"/>
+            <ellipse cx="825.5" cy="75.12" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M828.4731,80.7631 Q827.8921,81.0619 827.2529,81.2113 Q826.6138,81.3607 825.9082,81.3607 Q823.4014,81.3607 822.0815,79.7089 Q820.7617,78.057 820.7617,74.9359 Q820.7617,71.8065 822.0815,70.1547 Q823.4014,68.5028 825.9082,68.5028 Q826.6138,68.5028 827.2612,68.6522 Q827.9087,68.8016 828.4731,69.1005 L828.4731,71.8231 Q827.8423,71.2421 827.2488,70.9723 Q826.6553,70.7025 826.0244,70.7025 Q824.6797,70.7025 823.9949,71.7692 Q823.3101,72.8358 823.3101,74.9359 Q823.3101,77.0277 823.9949,78.0944 Q824.6797,79.161 826.0244,79.161 Q826.6553,79.161 827.2488,78.8912 Q827.8423,78.6215 828.4731,78.0404 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133"
+                  x="839.5" y="80.411">OpenEnrollmentsUI
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="811.5" x2="974.5" y1="91.12" y2="91.12"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="811.5" x2="974.5" y1="99.12" y2="99.12"/>
+            <ellipse cx="821.5" cy="112.8641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65"
+                  x="830.5" y="116.6552">doShow()
+            </text>
+            <ellipse cx="821.5" cy="129.3524" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69"
+                  x="830.5" y="133.1434">headline()
+            </text>
+            <ellipse cx="821.5" cy="145.8407" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127"
+                  x="830.5" y="149.6317">openEnrollments()
+            </text>
+            <ellipse cx="821.5" cy="162.329" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98"
+                  x="830.5" y="166.12">selectCourse()
+            </text>
+        </g><!--class CloseEnrollmentsUI-->
+        <g id="elem_CloseEnrollmentsUI">
+            <rect codeLine="18" fill="#F1F1F1" height="113.9531" id="CloseEnrollmentsUI" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="166" x="609" y="59.12"/>
+            <ellipse cx="624" cy="75.12" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M626.9731,80.7631 Q626.3921,81.0619 625.7529,81.2113 Q625.1138,81.3607 624.4082,81.3607 Q621.9014,81.3607 620.5815,79.7089 Q619.2617,78.057 619.2617,74.9359 Q619.2617,71.8065 620.5815,70.1547 Q621.9014,68.5028 624.4082,68.5028 Q625.1138,68.5028 625.7612,68.6522 Q626.4087,68.8016 626.9731,69.1005 L626.9731,71.8231 Q626.3423,71.2421 625.7488,70.9723 Q625.1553,70.7025 624.5244,70.7025 Q623.1797,70.7025 622.4949,71.7692 Q621.8101,72.8358 621.8101,74.9359 Q621.8101,77.0277 622.4949,78.0944 Q623.1797,79.161 624.5244,79.161 Q625.1553,79.161 625.7488,78.8912 Q626.3423,78.6215 626.9731,78.0404 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="638"
+                  y="80.411">CloseEnrollmentsUI
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="610" x2="774" y1="91.12" y2="91.12"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="610" x2="774" y1="99.12" y2="99.12"/>
+            <ellipse cx="620" cy="112.8641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="629"
+                  y="116.6552">doShow()
+            </text>
+            <ellipse cx="620" cy="129.3524" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="629"
+                  y="133.1434">headline()
+            </text>
+            <ellipse cx="620" cy="145.8407" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="629"
+                  y="149.6317">closeEnrollments()
+            </text>
+            <ellipse cx="620" cy="162.329" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="629"
+                  y="166.12">selectCourse()
+            </text>
+        </g><!--class OpenCloseEnrollmentsController-->
+        <g id="elem_OpenCloseEnrollmentsController">
+            <rect codeLine="25" fill="#F1F1F1" height="97.4648" id="OpenCloseEnrollmentsController" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="259" x="1010.5" y="67.62"/>
+            <ellipse cx="1025.5" cy="83.62" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1028.4731,89.2631 Q1027.8921,89.5619 1027.2529,89.7113 Q1026.6138,89.8607 1025.9082,89.8607 Q1023.4014,89.8607 1022.0815,88.2089 Q1020.7617,86.557 1020.7617,83.4359 Q1020.7617,80.3065 1022.0815,78.6547 Q1023.4014,77.0028 1025.9082,77.0028 Q1026.6138,77.0028 1027.2612,77.1522 Q1027.9087,77.3016 1028.4731,77.6005 L1028.4731,80.3231 Q1027.8423,79.7421 1027.2488,79.4723 Q1026.6553,79.2025 1026.0244,79.2025 Q1024.6797,79.2025 1023.9949,80.2692 Q1023.3101,81.3358 1023.3101,83.4359 Q1023.3101,85.5277 1023.9949,86.5944 Q1024.6797,87.661 1026.0244,87.661 Q1026.6553,87.661 1027.2488,87.3912 Q1027.8423,87.1215 1028.4731,86.5404 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227"
+                  x="1039.5" y="88.911">OpenCloseEnrollmentsController
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1011.5" x2="1268.5" y1="99.62" y2="99.62"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1011.5" x2="1268.5" y1="107.62" y2="107.62"/>
+            <ellipse cx="1021.5" cy="121.3641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82"
+                  x="1030.5" y="125.1552">allCourses()
+            </text>
+            <ellipse cx="1021.5" cy="137.8524" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143"
+                  x="1030.5" y="141.6434">changeCourseState()
+            </text>
+            <ellipse cx="1021.5" cy="154.3407" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="230"
+                  x="1030.5" y="158.1317">findCourseByStateInEnrollments()
+            </text>
+        </g><!--class ListCourseToEnrollmentService-->
+        <g id="elem_ListCourseToEnrollmentService">
+            <rect codeLine="31" fill="#F1F1F1" height="97.4648" id="ListCourseToEnrollmentService" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="256" x="1305" y="67.62"/>
+            <ellipse cx="1324.95" cy="83.62" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1327.9231,89.2631 Q1327.3421,89.5619 1326.7029,89.7113 Q1326.0638,89.8607 1325.3582,89.8607 Q1322.8514,89.8607 1321.5315,88.2089 Q1320.2117,86.557 1320.2117,83.4359 Q1320.2117,80.3065 1321.5315,78.6547 Q1322.8514,77.0028 1325.3582,77.0028 Q1326.0638,77.0028 1326.7112,77.1522 Q1327.3587,77.3016 1327.9231,77.6005 L1327.9231,80.3231 Q1327.2923,79.7421 1326.6988,79.4723 Q1326.1053,79.2025 1325.4744,79.2025 Q1324.1297,79.2025 1323.4449,80.2692 Q1322.7601,81.3358 1322.7601,83.4359 Q1322.7601,85.5277 1323.4449,86.5944 Q1324.1297,87.661 1325.4744,87.661 Q1326.1053,87.661 1326.6988,87.3912 Q1327.2923,87.1215 1327.9231,86.5404 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213"
+                  x="1340.05" y="88.911">ListCourseToEnrollmentService
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1306" x2="1560" y1="99.62" y2="99.62"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1306" x2="1560" y1="107.62" y2="107.62"/>
+            <ellipse cx="1316" cy="121.3641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="1325"
+                  y="125.1552">allCourses()
+            </text>
+            <ellipse cx="1316" cy="137.8524" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169"
+                  x="1325" y="141.6434">changeEnrollmentState()
+            </text>
+            <ellipse cx="1316" cy="154.3407" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="230"
+                  x="1325" y="158.1317">findCourseByStateInEnrollments()
+            </text>
+        </g><!--class CourseRepository-->
+        <g id="elem_CourseRepository">
+            <rect codeLine="37" fill="#F1F1F1" height="80.9766" id="CourseRepository" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="161" x="1596.5" y="75.62"/>
+            <ellipse cx="1614.65" cy="91.62" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1617.6231,97.2631 Q1617.0421,97.5619 1616.4029,97.7113 Q1615.7638,97.8607 1615.0582,97.8607 Q1612.5514,97.8607 1611.2315,96.2089 Q1609.9117,94.557 1609.9117,91.4359 Q1609.9117,88.3065 1611.2315,86.6547 Q1612.5514,85.0028 1615.0582,85.0028 Q1615.7638,85.0028 1616.4112,85.1522 Q1617.0587,85.3016 1617.6231,85.6005 L1617.6231,88.3231 Q1616.9923,87.7421 1616.3988,87.4723 Q1615.8053,87.2025 1615.1744,87.2025 Q1613.8297,87.2025 1613.1449,88.2692 Q1612.4601,89.3358 1612.4601,91.4359 Q1612.4601,93.5277 1613.1449,94.5944 Q1613.8297,95.661 1615.1744,95.661 Q1615.8053,95.661 1616.3988,95.3912 Q1616.9923,95.1215 1617.6231,94.5404 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122"
+                  x="1629.35" y="96.911">CourseRepository
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1597.5" x2="1756.5" y1="107.62" y2="107.62"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1597.5" x2="1756.5" y1="115.62" y2="115.62"/>
+            <ellipse cx="1607.5" cy="129.3641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135"
+                  x="1616.5" y="133.1552">findCourseByState()
+            </text>
+            <ellipse cx="1607.5" cy="145.8524" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86"
+                  x="1616.5" y="149.6434">findCourse()
+            </text>
+        </g><!--class Course-->
+        <g id="elem_Course">
+            <rect codeLine="42" fill="#F1F1F1" height="64.4883" id="Course" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="173" x="1792.5" y="84.12"/>
+            <ellipse cx="1850.25" cy="100.12" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1853.2231,105.7631 Q1852.6421,106.0619 1852.0029,106.2113 Q1851.3638,106.3607 1850.6582,106.3607 Q1848.1514,106.3607 1846.8315,104.7089 Q1845.5117,103.057 1845.5117,99.9359 Q1845.5117,96.8065 1846.8315,95.1547 Q1848.1514,93.5028 1850.6582,93.5028 Q1851.3638,93.5028 1852.0112,93.6522 Q1852.6587,93.8016 1853.2231,94.1005 L1853.2231,96.8231 Q1852.5923,96.2421 1851.9988,95.9723 Q1851.4053,95.7025 1850.7744,95.7025 Q1849.4297,95.7025 1848.7449,96.7692 Q1848.0601,97.8358 1848.0601,99.9359 Q1848.0601,102.0277 1848.7449,103.0944 Q1849.4297,104.161 1850.7744,104.161 Q1851.4053,104.161 1851.9988,103.8912 Q1852.5923,103.6215 1853.2231,103.0404 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49"
+                  x="1870.75" y="105.411">Course
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1793.5" x2="1964.5" y1="116.12" y2="116.12"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1793.5" x2="1964.5" y1="124.12" y2="124.12"/>
+            <ellipse cx="1803.5" cy="137.8641" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147"
+                  x="1812.5" y="141.6552">setEnrollmentStatus()
+            </text>
+        </g><!--link Manager to OpenCloseEnrollmentsMenu-->
+        <g id="link_Manager_OpenCloseEnrollmentsMenu">
+            <path codeLine="46" d="M273.45,116.12 C282.76,116.12 292.06,116.12 301.37,116.12 " fill="none"
+                  id="Manager-to-OpenCloseEnrollmentsMenu" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="306.3,116.12,297.3,112.12,301.3,116.12,297.3,120.12,306.3,116.12"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link OpenCloseEnrollmentsMenu to OpenEnrollmentsUI-->
+        <g id="link_OpenCloseEnrollmentsMenu_OpenEnrollmentsUI">
+            <path codeLine="47"
+                  d="M502.59,75.3 C533.33,57.33 571.91,38.25 609.5,29.12 C681.19,11.7 705.44,6 775.5,29.12 C793.04,34.91 810.11,44.43 825.55,55.11 "
+                  fill="none" id="OpenCloseEnrollmentsMenu-to-OpenEnrollmentsUI"
+                  style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="829.48,57.89,824.4503,49.4223,825.4007,54.9987,819.8243,55.9491,829.48,57.89"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link OpenCloseEnrollmentsMenu to CloseEnrollmentsUI-->
+        <g id="link_OpenCloseEnrollmentsMenu_CloseEnrollmentsUI">
+            <path codeLine="48" d="M574.34,116.12 C583.68,116.12 593.01,116.12 602.35,116.12 " fill="none"
+                  id="OpenCloseEnrollmentsMenu-to-CloseEnrollmentsUI" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="607.3,116.12,598.3,112.12,602.3,116.12,598.3,120.12,607.3,116.12"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CloseEnrollmentsUI to OpenCloseEnrollmentsController-->
+        <g id="link_CloseEnrollmentsUI_OpenCloseEnrollmentsController">
+            <path codeLine="49"
+                  d="M754.88,58.76 C771.78,46.63 790.85,35.56 810.5,29.12 C880.19,6.29 904.33,11.46 975.5,29.12 C1004.77,36.38 1034.57,49.92 1060.62,64.19 "
+                  fill="none" id="CloseEnrollmentsUI-to-OpenCloseEnrollmentsController"
+                  style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="1064.8,66.51,1058.8752,58.6426,1060.4292,64.0818,1054.99,65.6358,1064.8,66.51"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link OpenEnrollmentsUI to OpenCloseEnrollmentsController-->
+        <g id="link_OpenEnrollmentsUI_OpenCloseEnrollmentsController">
+            <path codeLine="50" d="M975.98,116.12 C985.26,116.12 994.54,116.12 1003.83,116.12 " fill="none"
+                  id="OpenEnrollmentsUI-to-OpenCloseEnrollmentsController" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="1008.74,116.12,999.74,112.12,1003.74,116.12,999.74,120.12,1008.74,116.12"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link OpenCloseEnrollmentsController to ListCourseToEnrollmentService-->
+        <g id="link_OpenCloseEnrollmentsController_ListCourseToEnrollmentService">
+            <path codeLine="51" d="M1269.9,116.12 C1279.31,116.12 1288.71,116.12 1298.12,116.12 " fill="none"
+                  id="OpenCloseEnrollmentsController-to-ListCourseToEnrollmentService"
+                  style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="1303.11,116.12,1294.11,112.12,1298.11,116.12,1294.11,120.12,1303.11,116.12"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link ListCourseToEnrollmentService to CourseRepository-->
+        <g id="link_ListCourseToEnrollmentService_CourseRepository">
+            <path codeLine="52" d="M1561.2,116.12 C1570.72,116.12 1580.24,116.12 1589.77,116.12 " fill="none"
+                  id="ListCourseToEnrollmentService-to-CourseRepository" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="1594.51,116.12,1585.51,112.12,1589.51,116.12,1585.51,120.12,1594.51,116.12"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CourseRepository to Course-->
+        <g id="link_CourseRepository_Course">
+            <path codeLine="53" d="M1757.88,116.12 C1767.23,116.12 1776.59,116.12 1785.94,116.12 " fill="none"
+                  id="CourseRepository-to-Course" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="1790.9,116.12,1781.9,112.12,1785.9,116.12,1781.9,120.12,1790.9,116.12"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--SRC=[jLBDJiCm3BxxANe48Lw10nM7IKn851uWf6QDPE8fJa4JujtPbgP_MRC9YTnYVp-s_6bI8iLQMRL1Ltn3iNytJrkq9R7WWtLCz87MonfjUtKT-c-jeJe3-W7GHzqbpByOZTglg-XGSzNmLzHhKDLaBCO_JscnB4YeVScj4noxpAUur4RFUETyJcrSilM7pt0bHHIelPvkbDrWA5PU-Nw0TsFhKBxV7HkhsTgzzQEHRg0N7Y0Lka-ZyPppYF0tzu1wnYsByUnsqJ1HIALJcKWMzDF1siupflxsRZ6ei9ZWZZH9GnQTXWTEv6bXbk7wa4RzCaucK7k1xDqXduh3ShF3GNB97WI_]-->
+    </g>
+</svg>

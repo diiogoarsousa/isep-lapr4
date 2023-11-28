@@ -1,0 +1,18 @@
+@startuml
+class SharedBoard {
+  -sharedMemory: shared_data*
+  -semaphores: sem_t*
+  -fileDescriptor: int
+  +addPostIt(row: int, col: int, value: string): void
+  +editPostIt(row: int, col: int, value: string): void
+  +deletePostIt(row: int, col: int): void
+  +getPostIt(row: int, col: int): string
+}
+
+class shared_data {
+  -data: string[ROWS][COLS]
+}
+
+SharedBoard -> shared_data
+@enduml
+

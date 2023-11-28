@@ -1,0 +1,35 @@
+@startmindmap
+
+title Learning Systems (LS) - Conceptual Model
+
+skinparam shadowing false
+skinparam mindmapLayout radial
+skinparam backgroundColor #EEEBDC
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam defaultFontColor #0000FF
+
+* User
+** Student
+*** Enrollment
+**** Course
+***** CourseClass
+****** Board
+******* Postit
+****** Exam
+******* ExamTaken
+** Teacher
+*** Enrollment
+**** Course
+***** CourseClass
+****** Board
+******* Postit
+****** Exam
+******* Grade
+** Manager
+*** Course
+**** User
+***** Enrollment
+** Meeting
+
+@endmindmap

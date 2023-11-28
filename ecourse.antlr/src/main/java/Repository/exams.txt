@@ -1,0 +1,27 @@
+Title "Cultura Geral"
+Feedback ON_SUBMISSION
+Grade ON_SUBMISSION
+ Description "none"
+ { Description "True False"
+ TRUE_FALSE
+ "A capital da Franca e Paris" "True" 10
+ "A capital da Franca e Paris" "False" 0
+ "A capital da Espanha e Madrid" "True" 10
+ "A capital da Espanha e Madrid" "False" 0
+ "A capital da Italia e Roma" "True" 10
+ "A capital da Italia e Roma" "False" 0
+ "A capital da Alemanha e Berlim" "True" 10
+ "A capital da Alemanha e Berlim" "False" 0
+ "A capital da Inglaterra e Londres" "True" 10
+ "A capital da Inglaterra e Londres" "False" 0
+ "A capital da Belgica e Bruxelas" "True" 10
+ "A capital da Belgica e Bruxelas" "False" 0
+ "A capital da Holanda e Amsterda" "True" 10
+ "A capital da Holanda e Amsterda" "False" 0
+ "A capital da Suiça e Berna" "True" 10
+ "A capital da Suiça e Berna" "False" 0
+ "A capital da Austria e Viena" "True" 10
+ "A capital da Austria e Viena" "False" 0
+  "A capital da Hungria e Budapeste" "True" 10
+ }
+ END

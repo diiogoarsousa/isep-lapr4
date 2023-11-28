@@ -1,0 +1,83 @@
+@startuml
+actor User
+participant Client as ui
+participant Server as app
+participant BoardUtils
+participant SBPClient
+participant SBPMessageFormat
+participant SBPServerController
+participant BoardController
+participant BoardService
+participant BoardRepository
+participant Database
+
+alt
+User -> ui: choose Archive Board
+activate ui
+ui -> ui: ArchiveBoard(client, board)
+activate ui
+deactivate ui
+end alt
+ui -> SBPClient: startConnection()
+deactivate ui
+activate SBPClient
+SBPClient -> SBPClient: sendArchiveBoardRequest(board)
+activate SBPClient
+deactivate SBPClient
+SBPClient -> SBPMessageFormat: toByteArray()
+deactivate SBPClient
+activate SBPMessageFormat
+SBPMessageFormat -> SBPClient: requestbytes
+deactivate SBPMessageFormat
+activate SBPClient
+SBPClient -> app: sendRequest()
+deactivate SBPClient
+activate app
+app -> SBPServerController: fromByteArray()
+deactivate app
+activate SBPServerController
+SBPServerController -> SBPMessageFormat: fromByteArray(message)
+deactivate SBPServerController
+activate SBPMessageFormat
+SBPMessageFormat -> SBPServerController: getData()
+deactivate SBPMessageFormat
+activate SBPServerController
+SBPServerController -> BoardController: archiveBoard(board)
+deactivate SBPServerController
+activate BoardController
+BoardController -> BoardService: archiveBoard(board)
+deactivate BoardController
+activate BoardService
+BoardService -> Board: archive()
+deactivate BoardService
+activate Board
+Board -> BoardRepository: archiveBoard(board)
+deactivate Board
+activate BoardRepository
+BoardRepository -> Database: archive board
+deactivate BoardRepository
+activate Database
+Database -> BoardRepository: board archived
+deactivate Database
+activate BoardRepository
+BoardRepository -> BoardService: board archived
+deactivate BoardRepository
+activate BoardService
+BoardService -> BoardController: board archived
+deactivate BoardService
+activate BoardController
+BoardController -> SBPServerController: sendArchiveBoardResponse()
+deactivate BoardController
+activate SBPServerController
+SBPServerController -> app: sendResponse()
+deactivate SBPServerController
+activate app
+app -> SBPClient: responsebytes
+deactivate app
+activate SBPClient
+SBPClient -> ui: displayConfirmationMessage()
+deactivate SBPClient
+activate ui
+ui -> User: confirmation message displayed
+deactivate ui
+@enduml

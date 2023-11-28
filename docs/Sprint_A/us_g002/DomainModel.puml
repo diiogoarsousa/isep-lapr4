@@ -1,0 +1,337 @@
+@startuml Domain Model
+left to right direction
+
+
+'=== Student Aggregate ===
+
+package Student_Aggregate{
+
+    Entity Student <<Aggregate Root>>{
+    }
+
+    Class StudentBirthDate <<Value Object>>{
+    }
+
+    Class StudentTaxNumber <<Identity>> <<Value Object>>{
+    }
+
+    Class MecanographicNumber <<Value Object>>{
+    }
+}
+Student "1" --> "1" StudentBirthDate : has
+Student "1" -u-> "1" StudentTaxNumber : has
+Student "1" -u-> "1" MecanographicNumber : has
+
+'=== Teacher Aggregate ===
+
+package Teacher_Aggregate{
+
+    Entity Teacher <<Aggregate Root>>{
+    }
+
+    Class TeacherBirthDate <<Value Object>>{
+    }
+
+    Class TeacherTaxNumber <<Identity>> <<Value Object>>{
+    }
+
+    Class Acronym <<Value Object>>{
+    }
+}
+Teacher "1" -u-> "1" TeacherBirthDate : has
+Teacher "1" -u-> "1" TeacherTaxNumber : has
+Teacher "1" -u-> "1" Acronym : has
+
+'=== Manager Aggregate ===
+
+package Manager_Aggregate{
+
+    Entity Manager <<Aggregate Root>>{
+    }
+}
+
+'=== TeacherAssignment Aggregate ===
+
+package TeacherAssignment_Aggregate{
+
+    Entity TeacherAssignment <<Aggregate Root>>{
+    }
+
+    Class Responsibility <<Value Object>>{
+    }
+
+}
+TeacherAssignment "1" --> "1" Responsibility: has
+
+'=== Course Aggregate ===
+
+package Course_Aggregate{
+
+    Entity Course <<Aggregate Root>>{
+    -description
+    }
+
+    Class CourseID <<Identity>> <<Value Object>>{
+    }
+
+    Class CourseName <<Value Object>>{
+    }
+
+    Class CourseState <<Value Object>>{
+    }
+}
+Course "1" -u-> "1" CourseID : has
+Course "1" -u-> "1" CourseName : has
+Course "1" -u-> "1" CourseState : has
+
+'=== CourseClass Aggregate ===
+
+package CourseClass_Aggregate{
+
+    Entity CourseClass <<Aggregate Root>>{
+    }
+
+    Class CourseClassID <<Identity>> <<Value Object>>{
+    }
+
+    Class CourseClassDate <<Value Object>>{
+    }
+
+    Class CourseClassAttendance  <<Value Object>>{
+    }
+
+    Class CourseClassDuration <<Value Object>>{
+    }
+
+
+}
+CourseClass "*" -u-> "1" CourseClassAttendance : logs
+CourseClass "1" --> "1" CourseClassDate : has
+CourseClass "1" -u-> "1" CourseClassID : has
+CourseClass "1" -u-> "1" CourseClassDuration : has
+
+'=== ExtraClass Aggregate ===
+
+package ExtraClass_Aggregate{
+
+    Entity ExtraClass <<Aggregate Root>>{
+    }
+
+    Class ExtraClassID <<Identity>> <<Value Object>>{
+    }
+
+    Class ExtraClassDate <<Value Object>>{
+    }
+
+    Class ExtraClassAttendance  <<Value Object>>{
+    }
+
+    Entity ExtraClassParticipant {
+    }
+
+    Class ExtraClassDuration <<Value Object>>{
+    }
+
+}
+ExtraClass "*" --> "1" ExtraClassAttendance : logs
+ExtraClass "1" -d-> "*" ExtraClassParticipant : has
+ExtraClass "1" --> "1" ExtraClassDate : has
+ExtraClass "1" -u-> "1" ExtraClassID : has
+ExtraClass "1" -u-> "1" ExtraClassDuration : has
+
+'=== Exam Aggregate ===
+
+package Exam_Aggregate{
+
+    Entity Exam <<Aggregate Root>>{
+    }
+
+    Class ExamID <<Identity>> <<Value Object>>{
+    }
+
+    Entity Header{
+    }
+
+    Entity Section <<Value Object>>{
+    }
+
+    Entity Question{
+    }
+
+}
+Exam "1" --> "*" Section : has
+Exam "1" --> "1" Header
+Section "1" --> "*" Question : has
+Exam "1" -u-> "1" ExamID : has
+
+'=== ExamTaken Aggregate ===
+
+package ExamTaken_Aggregate{
+
+    Entity ExamTaken <<Aggregate Root>>{
+    - grade
+    }
+
+    Class ExamTakenID <<Identity>> <<Value Object>>{
+    }
+
+    Class Answers <<Value Object>>{
+    }
+
+    Class Feedback <<Value Object>>{
+    }
+}
+ExamTaken "1" --> "*" Answers : has
+ExamTaken "1" -u-> "1" ExamTakenID : has
+ExamTaken "1" --> "1" Feedback : has
+
+'=== Enrollment Aggregate ===
+
+package Enrollment_Aggregate{
+
+    Entity Enrollment <<Aggregate Root>>{
+    }
+
+    class EnrollmentState <<Value Object>>{
+    }
+}
+Enrollment --> EnrollmentState: has
+
+'=== Meeting Aggregate ===
+
+package Meeting_Aggregate{
+
+    Entity Meeting <<Aggregate Root>>{
+    }
+
+    Class MeetingID <<Identity>> <<Value Object>>{
+    }
+
+    Class MeetingDate <<Value Object>>{
+    }
+
+    Entity MeetingParticipant{
+    }
+
+    class ParticipantResponse <<Value Object>>{
+    }
+
+    class MeetingDuration <<Value Object>>{
+    }
+}
+MeetingParticipant "1" --> "1" ParticipantResponse
+Meeting "1" -u-> "1" MeetingDuration
+Meeting "1" -u-> "1" MeetingID
+Meeting "1" -u-> "1" MeetingDate
+
+'=== Board Aggregate ===
+
+package Board_Aggregate{
+
+    Entity PostIt <<Value Object>>{
+    }
+
+    Entity Board <<Aggregate Root>>{
+    -columnsNumber
+    -rowsNumber
+    }
+
+    Entity PostItHistory <<Value Object>>{
+    }
+
+    class Action <<Value Object>>{
+    }
+
+    class OldValue <<Value Object>>{
+    }
+
+    Class Cell <<Value Object>>{
+    - column
+    - row
+    }
+
+    Class BoardTitle <<Identity>> <<Value Object>>{
+    }
+
+}
+Cell "1" <-- "1" PostIt : is in
+Board "1" <-- "*" Cell : belongs
+Board --> PostItHistory : keeps
+Board "1" -u-> "1" BoardTitle : has
+PostItHistory "1" --> "*" Action : has
+PostItHistory "1" --> "*" OldValue : has
+
+'=== BoardShare Aggregate ===
+
+package BoardShare_Aggregate{
+
+    Entity BoardShare <<Aggregate Root>>{
+    - canWrite
+    }
+
+    Class BoardOwner <<Value Object>>{
+    }
+}
+BoardShare -u-> BoardOwner
+
+'=== User Aggregate ===
+package User_Aggregate{
+
+   Entity User{
+   - email
+   - password
+   - fullName
+   - shortName
+   - active
+   }
+}
+
+'=== Entity Relationships ===
+
+User <-- Manager : has
+User <-- Teacher : has
+User <--  Student : has
+
+User "1" <-l- "*" Board : is owned
+User <-u- BoardShare : with
+
+User "1" --> "*" Meeting : schedules
+User "1" --> "*" Meeting : participates
+
+Manager "1" --> "*" User : manages
+
+Board -l-> BoardShare
+
+
+
+CourseClass "*" <-- "1" Course : has
+
+ExtraClass "*" <-- "1" Course : has
+
+Enrollment  -->  Course : into
+
+Exam "1" --> "*" ExamTaken : done
+
+Course "1" --> "*" Exam : has
+
+
+
+MeetingParticipant "*" <-- "1" Meeting: has
+
+
+
+Student "1" --> "1" Enrollment : requests
+Student "1" --> "*" ExamTaken : has
+Student "1" --> "*" ExtraClass: participates
+
+
+TeacherAssignment "*" -u-> "1" Course : has
+
+Teacher "1" -r-> "*" TeacherAssignment
+Teacher "1" --> "*" CourseClass : schedules
+Teacher "1" --> "*" ExtraClass : schedules
+
+
+
+
+@enduml

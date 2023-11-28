@@ -1,0 +1,68 @@
+@startuml
+package ui {
+    class ScheduleMeetingUI{
+    +selectValidDate()
+    +selectValidHour()
+    +scheduleMeeting(Meeting)
+    +selectParticipants(Calendar)
+    +selectValidDuration()
+    }
+}
+
+package controller {
+    class MyMeetingController{
+    +activeUsers()
+    +currentUser()
+    +myMeetingFor()
+    +inviteParticipantFor()
+    +scheduleMeeting()
+    +listParticipants()
+    }
+}
+
+package service {
+    class UserManagementService{
+       +activeUsers()
+       +userOfIdentity()
+       }
+}
+
+package repositories {
+    class MeetingRepository{
+    +findMeetingsByUser(SystemUser)
+    +findByDayAndUser(Calendar,SystemUser))
+    +findParticipantsByDay(Calendar,SystemUser)
+    }
+}
+
+package persistence {
+    class JpaMeetingRepository {
+    +save(Meeting)
+    +findMeetingsByUser(SystemUser)
+    +findByDayAndUser(Calendar,User)
+
+    }
+}
+
+
+package infrastructure {
+    class AuthorizationService {
+    +ensureAuthenticatedUserHasAnyOf()
+    +session()
+    }
+    class AuthzRegistry{
+    +userService()
+    +authenticationService()
+    +authorizationService()
+    }
+
+}
+
+ScheduleMeetingUI ..> MyMeetingController
+MyMeetingController --> UserManagementService
+MyMeetingController --> MeetingRepository
+MyMeetingController --> AuthorizationService
+AuthzRegistry -> AuthorizationService
+MeetingRepository --> JpaMeetingRepository
+
+@enduml

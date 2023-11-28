@@ -1,0 +1,36 @@
+@startuml
+
+skinparam SequenceMessageAlignment center
+autonumber
+actor "User" as USER
+
+participant ":CancelMeetingUI" as UI
+participant ":CancelMeetingController" as CRTL
+participant ":MeetingRepository" as REP
+
+USER -> UI : asks to cancel a meeting
+activate UI
+UI -> CRTL : listMyMeetings()
+activate CRTL
+CRTL -> REP: findMeetingsByUser(SystemUser)
+activate REP
+REP -> CRTL : Result
+deactivate REP
+CRTL -> UI : Result
+deactivate CRTL
+UI -> USER : show meetings list \n and asks to select one
+deactivate UI
+USER -> UI : select a meeting
+activate UI
+UI -> CRTL : cancelMeeting(Meeting)
+activate CRTL
+CRTL -> REP : delete(Meeting)
+activate REP
+REP -> CRTL : Result
+deactivate REP
+CRTL -> UI : Result
+deactivate CRTL
+UI -> USER : show success message
+deactivate UI
+
+@enduml

@@ -1,0 +1,81 @@
+@startuml
+package ui {
+    class OpenCloseCourseUI{
+    +openCloseCourse()
+    +selectCourse(courses)
+    }
+}
+
+package controller {
+    class OpenCloseCourseController{
+    +findCourseByState(state)
+    +openCloseCourse(course)
+    +toggleOpenCloseCourse(course)
+    +getState()
+    +ensureAuthenticatedUserHasAnyOf()
+    }
+}
+
+package service {
+    class ListCourseService{
+    +findCourseByState(state)
+    +openCloseCourse(course)
+    +toggleOpenCloseCourse(course)
+    +setStateOpen(state)
+    +setStateClosed(state)
+    }
+}
+
+package repositories {
+    class CourseRepository{
+    +findCourseByState(state)
+    }
+}
+
+package persistence {
+    class JpaCourseRepository {
+    +findCourseByState(state)
+    }
+    class Database{
+    -state: CourseStateEnum
+    }
+}
+
+
+package course {
+    entity Course {
+        +getState()
+        +setStateOpen()
+        +setStateClosed()
+    }
+    class CourseState{
+        -state: CourseStateEnum
+    }
+    class CourseName
+    class CourseId
+}
+
+package infrastructure {
+    class AuthorizationService {
+    +ensureAuthenticatedUserHasAnyOf()
+    }
+    class AuthzRegistry{
+    +userService()
+    +authenticationService()
+    +authorizationService()
+    }
+}
+
+OpenCloseCourseUI ..> OpenCloseCourseController
+OpenCloseCourseController --> ListCourseService
+ListCourseService --> CourseRepository
+ListCourseService --> Course
+OpenCloseCourseController --> AuthorizationService
+AuthzRegistry -> AuthorizationService
+OpenCloseCourseController --> Course
+CourseRepository --> JpaCourseRepository
+JpaCourseRepository --> Database
+Course --> CourseState
+Course --> CourseName
+Course --> CourseId
+@enduml

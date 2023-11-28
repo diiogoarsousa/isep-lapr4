@@ -1,0 +1,100 @@
+@startuml
+class User {
+    -id: UUID
+    -name: String
+    -email: String
+    -password: String
+    +getId(): UUID
+    +getName(): String
+    +getEmail(): String
+    +getPassword(): String
+    +setName(name: String): void
+    +setEmail(email: String): void
+    +setPassword(password: String): void
+}
+
+class Board {
+    -id: UUID
+    -title: String
+    -description: String
+    -owner: User
+    -sharedWith: List<User>
+    +getId(): UUID
+    +getTitle(): String
+    +getDescription(): String
+    +getOwner(): User
+    +setTitle(title: String): void
+    +setDescription(description: String): void
+    +setOwner(owner: User): void
+    +shareBoard(users: List<User>): void
+    +revokeAccess(user: User): void
+    +isSharedWith(user: User): boolean
+}
+
+interface BoardRepository {
+    +save(board: Board): void
+    +findById(id: UUID): Board
+    +findByTitle(title: String): Board
+    +findAll(): List<Board>
+}
+
+class JpaBoardRepository {
+    -entityManager: EntityManager
+    +save(board: Board): void
+    +findById(id: UUID): Board
+    +findByTitle(title: String): Board
+    +findAll(): List<Board>
+}
+
+class BoardService {
+    -boardRepository: BoardRepository
+    +createBoard(title: String, owner: User, nrows: Int, ncolumns: Int): Board
+    +shareBoard(board: Board, users: List<User>): void
+}
+
+class SBPClient {
+    -socket: Socket
+    +startConnection(): void
+    +sendCreateBoardRequest(title: String, rows: Int, columns: Int): void
+    +sendShareBoardRequest(board: Board, users: List<User>): void
+}
+
+class SBPServer {
+    -socket: Socket
+    +start(): void
+    +stop(): void
+}
+
+class SBPServerController {
+    -server: SBPServer
+    +fromByteArray(message: ByteArray): SBPMessageFormat
+    +sendAcknowledgeResponse(): void
+}
+
+class SBPMessageFormat {
+    -data: Map<String, Any>
+    +toByteArray(): ByteArray
+    +fromByteArray(message: ByteArray): SBPMessageFormat
+    +getData(): Map<String, Any>
+    +sendResponse(): void
+}
+
+class Database {
+    -boards: List<Board>
+    -users: List<User>
+    +getBoardRepository(): BoardRepository
+    +getUserRepository(): UserRepository
+}
+
+User --> Board
+BoardRepository <|-- JpaBoardRepository
+BoardRepository <|-- InMemoryBoardRepository
+Database --> BoardRepository
+Database --> UserRepository
+BoardService --> BoardRepository
+SBPClient --> SBPMessageFormat
+SBPMessageFormat --> SBPServer
+SBPServerController --> SBPServer
+SBPServerController --> BoardService
+BoardService --> Board
+@enduml

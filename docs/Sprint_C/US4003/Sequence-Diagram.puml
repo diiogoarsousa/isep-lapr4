@@ -1,0 +1,37 @@
+@startuml
+
+skinparam SequenceMessageAlignment center
+autonumber
+actor "User" as USER
+
+participant ":AcceptRejectMeetingUI" as UI
+participant ":AcceptRejectMeetingController" as CRTL
+participant ":MeetingRepository" as REP
+participant ":MeetingParticipantRepository" as MP
+
+USER -> UI : asks to view a list of participants  \n in my meeting and their status
+activate UI
+UI -> CRTL : listMyMeetings()
+activate CRTL
+CRTL -> REP: findMeetingsByUser(SystemUser)
+activate REP
+REP -> CRTL : Result
+deactivate REP
+CRTL -> UI : Result
+deactivate CRTL
+UI -> USER : show meetings list \n and asks to select one
+deactivate UI
+USER -> UI : select a meeting
+activate UI
+UI -> CRTL : listMeetingParticipants(Meeting)
+activate CRTL
+CRTL -> MP : findMeetingParticipantsByMeeting(Meeting)
+activate MP
+MP -> CRTL : Result
+deactivate MP
+CRTL -> UI : Result
+deactivate CRTL
+UI -> USER : show participants list and their status
+deactivate UI
+
+@enduml

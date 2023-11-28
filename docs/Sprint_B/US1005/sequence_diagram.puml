@@ -1,0 +1,95 @@
+@startuml
+
+participant "<<presentation>>\n:SetCourseTeachersUI" as ui
+participant "<<application>>\n:SetCourseTeachersController" as ctrl
+participant "<<persistence>>\n:PersistenceContext" as pc
+participant "<<factory>>\n:RepositoryFactory" as rf
+participant "<<repository>>\n:CoursesRepository" as repoC
+participant "<<repository>>\n:TeachersRepository" as repoT
+participant "<<repository>>\n:TeacherAssignmentRepository" as repo
+participant "<<domain>> \nTeacherAssignment" as ta
+activate ui
+ui->ctrl:create
+activate ctrl
+deactivate ctrl
+
+ui->ctrl:getCourses()
+activate ctrl
+ctrl->pc:repositories()
+activate pc
+pc->rf:create
+activate rf
+rf->repoC:create
+activate repoC
+deactivate repoC
+deactivate rf
+deactivate pc
+
+ctrl->repoC:findAllCoursesNotClosed()
+activate repoC
+deactivate repoC
+ctrl-->ui:Courses
+deactivate ctrl
+ui->ctrl:setCourse(course)
+activate ctrl
+deactivate ctrl
+
+
+ui->ctrl:getTeachers()
+activate ctrl
+ctrl->pc:repositories()
+activate pc
+pc->rf:create
+activate rf
+rf->repoT:create
+activate repoT
+deactivate repoT
+deactivate rf
+deactivate pc
+
+ctrl->repoT:findAllActiveTeachers()
+activate repoT
+deactivate repoT
+ctrl-->ui:Teachers
+deactivate ctrl
+
+
+
+loop
+ui->ctrl:setTeacher(teacher)
+activate ctrl
+end loop
+
+ctrl-->ui:TeachersAssigned
+deactivate ctrl
+
+ui->ctrl:setHeadTeacher(teacher)
+activate ctrl
+deactivate ctrl
+
+
+
+ui->ctrl:saveTeacherAssignments()
+activate ctrl
+
+ctrl->pc:repositories()
+activate pc
+pc->rf:create
+activate rf
+rf->repo:create
+activate repo
+deactivate repo
+deactivate rf
+deactivate pc
+
+loop
+ctrl -> ta: newTeacherAssignment = create(teacherID, courseID, responsibility)
+activate ta
+deactivate ta
+ctrl->repo:save(newTeacherAssignment)
+activate repo
+deactivate repo
+end loop
+deactivate ui
+@enduml
+

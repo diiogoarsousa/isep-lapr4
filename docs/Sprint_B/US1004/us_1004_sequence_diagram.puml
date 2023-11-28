@@ -1,0 +1,139 @@
+@startuml
+title OpenCloseCourse
+
+actor Manager
+
+participant OpenCloseCourseUI as UI
+participant OpenCloseCourseController as Controller
+participant AuthorizationService as AService
+participant AuthzRegistry as ARegistry
+participant ListCourseService as Service
+
+Manager -> UI: select open/close course
+activate UI
+UI -> Manager: display open/close course options
+deactivate UI
+activate Manager
+Manager -> UI: select Open or Close Courses
+deactivate Manager
+activate UI
+UI -> Controller: findCourseByState(courseState)
+deactivate UI
+activate Controller
+Controller -> AService: ensureAuthenticatedUserHasAnyOf(BaseRoles.MANAGER)
+deactivate Controller
+activate AService
+AService -> ARegistry: authorizationService()
+deactivate AService
+activate ARegistry
+ARegistry -> AService: return authorizationService
+deactivate ARegistry
+activate AService
+AService -> Controller: return authorizationService
+deactivate AService
+activate Controller
+Controller -> Service: findCourseByState(courseState)
+deactivate Controller
+activate Service
+Service -> CourseRepository: findCourseByState(courseState)
+deactivate Service
+activate CourseRepository
+CourseRepository -> PersistenceContext: repositories()
+deactivate CourseRepository
+activate PersistenceContext
+PersistenceContext -> CourseRepository: return repositories
+deactivate PersistenceContext
+activate CourseRepository
+CourseRepository -> PersistenceContext: connect()
+deactivate CourseRepository
+activate PersistenceContext
+PersistenceContext -> Database: connect()
+deactivate PersistenceContext
+activate Database
+Database -> PersistenceContext: return connection
+deactivate Database
+activate PersistenceContext
+PersistenceContext -> CourseRepository: load return connection
+deactivate PersistenceContext
+activate CourseRepository
+CourseRepository -> Database: execute query
+deactivate CourseRepository
+activate Database
+Database -> CourseRepository: return results
+deactivate Database
+activate CourseRepository
+CourseRepository -> Service: return results
+deactivate CourseRepository
+activate Service
+Service -> Controller: return results
+deactivate Service
+activate Controller
+Controller -> UI: return results
+deactivate Controller
+activate UI
+UI -> Manager: display results
+deactivate UI
+activate Manager
+
+Manager -> UI: openCloseCourse(course)
+deactivate Manager
+activate UI
+UI -> Controller: openCloseCourse(course)
+deactivate UI
+activate Controller
+Controller -> AService: ensureAuthenticatedUserHasAnyOf(BaseRoles.MANAGER)
+deactivate Controller
+activate AService
+AService -> ARegistry: authorizationService()
+deactivate AService
+activate ARegistry
+ARegistry -> AService: return authorizationService
+deactivate ARegistry
+activate AService
+AService -> Controller: return authorizationService
+deactivate AService
+activate Controller
+Controller -> Service: toggleOpenCloseCourse(course)
+deactivate Controller
+activate Service
+Service -> CourseRepository: save(course)
+deactivate Service
+activate CourseRepository
+CourseRepository -> PersistenceContext: repositories()
+deactivate CourseRepository
+activate PersistenceContext
+PersistenceContext -> CourseRepository: return repositories
+deactivate PersistenceContext
+activate CourseRepository
+CourseRepository -> PersistenceContext: connect()
+deactivate CourseRepository
+activate PersistenceContext
+PersistenceContext -> Database: connect()
+deactivate PersistenceContext
+activate Database
+Database -> PersistenceContext: return connection
+deactivate Database
+activate PersistenceContext
+PersistenceContext -> CourseRepository: load return connection
+deactivate PersistenceContext
+activate CourseRepository
+CourseRepository -> Database: save(course)
+deactivate CourseRepository
+activate Database
+Database -> CourseRepository: return results
+deactivate Database
+activate CourseRepository
+CourseRepository -> Service: return results
+deactivate CourseRepository
+deactivate CourseRepository
+activate Service
+Service -> Controller: return results
+deactivate Service
+activate Controller
+Controller -> UI: return results
+deactivate Controller
+activate UI
+UI -> Manager: display results
+deactivate UI
+
+@enduml

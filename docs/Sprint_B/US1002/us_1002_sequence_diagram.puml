@@ -1,0 +1,65 @@
+
+@startuml
+actor Manager
+Manager -> CreateCourseUi: createCourse(courseName, courseState, startDate, \nendDate, minEnrolments, maxEnrolments, \nheadTeacher, description)
+activate CreateCourseUi
+CreateCourseUi -> CreateCourseController: createCourse(courseName, courseState, startDate, \nendDate, minEnrolments, maxEnrolments, \nheadTeacher, description)
+deactivate CreateCourseUi
+activate CreateCourseController
+CreateCourseController -> CourseBuilder: withState(courseState)
+deactivate CreateCourseController
+activate CourseBuilder
+CourseBuilder -> CourseBuilder: named(courseName)
+activate CourseBuilder
+deactivate CourseBuilder
+CourseBuilder -> CourseBuilder: withStartDate(startDate)
+activate CourseBuilder
+deactivate CourseBuilder
+CourseBuilder -> CourseBuilder: withEndDate(endDate)
+activate CourseBuilder
+deactivate CourseBuilder
+CourseBuilder -> CourseBuilder: withMinEnrolments(minEnrolments)
+activate CourseBuilder
+deactivate CourseBuilder
+CourseBuilder -> CourseBuilder: withMaxEnrolments(maxEnrolments)
+activate CourseBuilder
+deactivate CourseBuilder
+CourseBuilder -> CourseBuilder: withHeadTeacher(headTeacher)
+activate CourseBuilder
+deactivate CourseBuilder
+CourseBuilder -> Course: build()
+deactivate CourseBuilder
+activate Course
+Course -> CreateCourseController: return
+deactivate Course
+activate CreateCourseController
+CreateCourseController -> CourseRepository: save(course)
+deactivate CreateCourseController
+activate CourseRepository
+CourseRepository -> JpaCourseRepository: save(course)
+deactivate CourseRepository
+activate JpaCourseRepository
+JpaCourseRepository -> Database: insert(course)
+deactivate JpaCourseRepository
+activate Database
+Database -> JpaCourseRepository: return
+deactivate Database
+activate JpaCourseRepository
+JpaCourseRepository -> Course: return
+deactivate JpaCourseRepository
+activate Course
+Course -> CreateCourseController: return
+deactivate Course
+activate CreateCourseController
+CreateCourseController -> Course: getCourse()
+deactivate CreateCourseController
+activate Course
+Course -> CreateCourseController: courseCreated(course)
+deactivate Course
+activate CreateCourseController
+CreateCourseController -> CreateCourseUi: courseCreated(course)
+deactivate CreateCourseController
+activate CreateCourseUi
+CreateCourseUi -> Manager: courseCreated(course)
+deactivate CreateCourseUi
+@enduml

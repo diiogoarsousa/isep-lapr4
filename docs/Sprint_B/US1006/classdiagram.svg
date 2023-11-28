@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css"
+     height="434px" preserveAspectRatio="none" style="width:292px;height:434px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 292 434" width="292px" zoomAndPan="magnify">
+    <defs/>
+    <g><!--class ListAvailableCourseService-->
+        <g id="elem_ListAvailableCourseService">
+            <rect codeLine="2" fill="#F1F1F1" height="64.4883" id="ListAvailableCourseService" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="278" x="7" y="7"/>
+            <ellipse cx="50.8" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M53.7731,28.6431 Q53.1921,28.9419 52.5529,29.0913 Q51.9138,29.2407 51.2082,29.2407 Q48.7014,29.2407 47.3815,27.5889 Q46.0617,25.937 46.0617,22.8159 Q46.0617,19.6865 47.3815,18.0347 Q48.7014,16.3828 51.2082,16.3828 Q51.9138,16.3828 52.5612,16.5322 Q53.2087,16.6816 53.7731,16.9805 L53.7731,19.7031 Q53.1423,19.1221 52.5488,18.8523 Q51.9553,18.5825 51.3244,18.5825 Q49.9797,18.5825 49.2949,19.6492 Q48.6101,20.7158 48.6101,22.8159 Q48.6101,24.9077 49.2949,25.9744 Q49.9797,27.041 51.3244,27.041 Q51.9553,27.041 52.5488,26.7712 Q53.1423,26.5015 53.7731,25.9204 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182"
+                  x="71.2" y="28.291">ListAvailableCourseService
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="284" y1="39" y2="39"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="284" y1="47" y2="47"/>
+            <ellipse cx="18" cy="60.7441" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="27"
+                  y="64.5352">getAvailableCourses(): List&lt;Course&gt;
+            </text>
+        </g><!--class CourseRepository-->
+        <g id="elem_CourseRepository">
+            <rect codeLine="6" fill="#F1F1F1" height="64.4883" id="CourseRepository" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="183" x="54.5" y="131"/>
+            <ellipse cx="82.55" cy="147" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M85.5231,152.6431 Q84.9421,152.9419 84.3029,153.0913 Q83.6638,153.2407 82.9582,153.2407 Q80.4514,153.2407 79.1315,151.5889 Q77.8117,149.937 77.8117,146.8159 Q77.8117,143.6865 79.1315,142.0347 Q80.4514,140.3828 82.9582,140.3828 Q83.6638,140.3828 84.3112,140.5322 Q84.9587,140.6816 85.5231,140.9805 L85.5231,143.7031 Q84.8923,143.1221 84.2988,142.8523 Q83.7053,142.5825 83.0744,142.5825 Q81.7297,142.5825 81.0449,143.6492 Q80.3601,144.7158 80.3601,146.8159 Q80.3601,148.9077 81.0449,149.9744 Q81.7297,151.041 83.0744,151.041 Q83.7053,151.041 84.2988,150.7712 Q84.8923,150.5015 85.5231,149.9204 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122"
+                  x="99.45" y="152.291">CourseRepository
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="55.5" x2="236.5" y1="163" y2="163"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="55.5" x2="236.5" y1="171" y2="171"/>
+            <ellipse cx="65.5" cy="184.7441" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157"
+                  x="74.5" y="188.5352">findAll(): List&lt;Course&gt;
+            </text>
+        </g><!--class CourseStateEnum-->
+        <g id="elem_CourseStateEnum">
+            <rect codeLine="10" fill="#F1F1F1" height="48" id="CourseStateEnum" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="154" x="69" y="379"/>
+            <ellipse cx="84" cy="395" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M88.1143,401 L80.3945,401 L80.3945,388.6069 L88.1143,388.6069 L88.1143,390.7651 L82.8433,390.7651 L82.8433,393.438 L87.6162,393.438 L87.6162,395.5962 L82.8433,395.5962 L82.8433,398.8418 L88.1143,398.8418 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="98"
+                  y="400.291">CourseStateEnum
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="70" x2="222" y1="411" y2="411"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="70" x2="222" y1="419" y2="419"/>
+        </g><!--class Course-->
+        <g id="elem_Course">
+            <rect codeLine="12" fill="#F1F1F1" height="64.4883" id="Course" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="189" x="51.5" y="255"/>
+            <ellipse cx="117.25" cy="271" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M120.2231,276.6431 Q119.6421,276.9419 119.0029,277.0913 Q118.3638,277.2407 117.6582,277.2407 Q115.1514,277.2407 113.8315,275.5889 Q112.5117,273.937 112.5117,270.8159 Q112.5117,267.6865 113.8315,266.0347 Q115.1514,264.3828 117.6582,264.3828 Q118.3638,264.3828 119.0112,264.5322 Q119.6587,264.6816 120.2231,264.9805 L120.2231,267.7031 Q119.5923,267.1221 118.9988,266.8523 Q118.4053,266.5825 117.7744,266.5825 Q116.4297,266.5825 115.7449,267.6492 Q115.0601,268.7158 115.0601,270.8159 Q115.0601,272.9077 115.7449,273.9744 Q116.4297,275.041 117.7744,275.041 Q118.4053,275.041 118.9988,274.7712 Q119.5923,274.5015 120.2231,273.9204 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49"
+                  x="137.75" y="276.291">Course
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="52.5" x2="239.5" y1="287" y2="287"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="59.5" y="297.7441"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163"
+                  x="71.5" y="304.5352">state: CourseStateEnum
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="52.5" x2="239.5" y1="311.4883" y2="311.4883"/>
+        </g><!--link ListAvailableCourseService to CourseRepository-->
+        <g id="link_ListAvailableCourseService_CourseRepository">
+            <path codeLine="16" d="M146,71.42 C146,87.64 146,107.55 146,124.56 " fill="none"
+                  id="ListAvailableCourseService-to-CourseRepository" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="146,129.17,150,120.17,146,124.17,142,120.17,146,129.17"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CourseRepository to Course-->
+        <g id="link_CourseRepository_Course">
+            <path codeLine="17" d="M146,195.42 C146,211.64 146,231.55 146,248.56 " fill="none"
+                  id="CourseRepository-to-Course" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="146,253.17,150,244.17,146,248.17,142,244.17,146,253.17"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link Course to CourseStateEnum-->
+        <g id="link_Course_CourseStateEnum">
+            <path codeLine="18" d="M146,319.45 C146,335.98 146,356.11 146,372.36 " fill="none"
+                  id="Course-to-CourseStateEnum" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="146,377.09,150,368.09,146,372.09,142,368.09,146,377.09"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--SRC=[Iyv9B2vMyCaiBd4iIypCIKpAINNEBoqgJWrEBIhBJ4vLgEPIKD1MI4z5bo_MqBG2wxE1yEsuQhcuai6cGGI2KWloYpDByeigeMQaPUQbEERaODENcbUQ2zKMN99OakeAvAEQ1ZP3Lw4O96k5eHHe11ulwEhQORY92yEH25LGEIGHX4q0]-->
+    </g>
+</svg>

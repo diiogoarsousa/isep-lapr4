@@ -1,0 +1,32 @@
+@startuml Use Case Diagram
+left to right direction
+
+actor User as U
+actor Manager as M
+actor Teacher as T
+actor Student as S
+
+M --> (US1001\n Register, disable/enable, and list users of the system:Teachers and Students, as well as Managers)
+M --> (US1002\n Create new course)
+M --> (US1003\n Open and close enrollments in courses)
+M --> (US1004\n open and close courses)
+M --> (US1005\n Set the teachers of a course)
+M --> (US1007\n Enroll students in bulk by importing their data using a csv file)
+M --> (US1009\n Approve or reject students applications to courses)
+
+U --> (US1006\n List all the courses that are available to me)
+U --> (US3002\n Create a board)
+U --> (US4001\n Schedule a meeting)
+
+S --> (US1008\n Request my enrollment in a course)
+S --> (US2002\n List all of my future exams)
+
+T --> (US1010\n Schedule a class)
+T --> (US1011\n Schedule a extra class)
+T --> (US1012\n Update the schedule of a class)
+T --> (US2001\n Create/Update an exam)
+T --> (US2007\n Add/update exam questions \n to a repository of exam questions to be used in automatic formative exams)
+T --> (US2008\n Create/Update a formative exam)
+
+
+@enduml

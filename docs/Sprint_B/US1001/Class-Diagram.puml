@@ -1,0 +1,54 @@
+@startuml
+package ui {
+    class AddUserUI{
+    +showRoles(roles)
+    +buildRolesMenu(roles)
+    }
+}
+
+package controller {
+    class AddUserController{
+    +addUser(data)
+    +getRoleTypes()
+    }
+}
+
+package service {
+    class UserManagementService{
+       +registerNewUser(data)
+       }
+}
+
+package repositories {
+    class UserRepository{
+    +findCourseByState(state)
+    }
+}
+
+package persistence {
+    class JpaAutoTxUserRepository {
+    +save(user)
+    }
+}
+
+
+package infrastructure {
+    class AuthorizationService {
+    +ensureAuthenticatedUserHasAnyOf()
+    }
+    class AuthzRegistry{
+    +userService()
+    +authenticationService()
+    +authorizationService()
+    }
+
+}
+
+AddUserUI ..> AddUserController
+AddUserController --> UserManagementService
+UserManagementService --> UserRepository
+AddUserController --> AuthorizationService
+AuthzRegistry -> AuthorizationService
+UserRepository --> JpaAutoTxUserRepository
+
+@enduml

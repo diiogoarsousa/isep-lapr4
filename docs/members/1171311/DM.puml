@@ -1,0 +1,159 @@
+@startuml
+
+title Learning Systems (LS) - eCourse
+skinparam classAttributeIconSize 0
+skinparam roundcorner 10
+left to right direction
+
+'===USER===
+    abstract User{
+        -<<identity>> userID
+        - <<value object>> email
+        - <<value object>> shortName
+        - <<value object>> fullName
+        - <<value object>> password
+        - boolean active
+    }
+
+    Entity Manager{
+    }
+
+    Entity Teacher{
+     - <<value object>> birthDate
+     - <<value object>> taxNumber
+     - <<value object>> acronym
+    }
+
+    Entity Student{
+     - <<value object>> birthDate
+     - <<value object>> taxNumber
+     - <<value object>> mecanographicNumber
+    }
+
+Manager "1,*" --> "1" User : is a
+Teacher "1,*" --> "1" User : is a
+Student "1,*" --> "1" User : is a
+Manager "1" --> "*" User: manages
+
+'===Course===
+
+    Entity Course {
+     - <<identity>> courseID
+     - <<value object>> courseName
+     - <<value object>> description
+     - <<value object>> headTeacher
+     - <<value object>> otherTeachers
+     - <<value object>> appliedStudents
+     - <<value object>> enrolledStudents
+     - <<value object>> minimumStudents
+     - <<value object>> maximumStudents
+     - <<value object>> startDate
+     - <<value object>> enrollmentDate
+     - <<value object>> endDate
+     - <<value object>> state
+    }
+
+Course "*" <-- "1" Manager: manages
+Course "*" <-- "*" Student: enroll
+
+'===Event===
+
+    abstract Event{
+     - <<identity>> eventID
+     - <<value object>> title
+     - <<value object>> date
+     - <<value object>> duration
+     - <<value object>> participants
+    }
+
+    Entity Class{
+    }
+
+    Entity Meeting{
+    }
+
+    Entity ExtraClass{
+    }
+
+Event "1" -- "0,*" Meeting
+Event "1" -- "0,*" Class
+Event "1" -- "0,*" ExtraClass
+Class "*" <-- "1" Teacher: schedule
+Class "*" <-- "*" Student: participate
+ExtraClass "*" <-- "1" Teacher: Schedule
+ExtraClass "*" <-- "*" Student: participate
+Meeting "*" <-- "0,1" Teacher: schedule
+Meeting "*" <-- "0,1" Student: schedule
+Meeting "*" <-- "0,1" Teacher: participate
+Meeting "*" <-- "0,1" Student: participate
+
+'===Exam===
+
+    Entity Exam{
+     - <<identity>> examID
+     - <<value object>> title
+     - <<value object>> description
+     - <<value object>> header
+     - <<value object>> openDate
+     - <<value object>> closeDate
+     - <<value object>> designRules
+     - <<value object>> executingRules
+     - <<value object>> evaluationRules
+    }
+
+    object Grade {
+     -<<value object>> studentID
+     -<<value object>> grade
+    }
+
+    object Section{
+     - <<value object>> description
+    }
+
+    object Question {
+    - <<value object>> type
+    }
+
+    object Answer{
+    }
+
+Section "1" --> "*" Question: has a group of
+Exam "1" --> "1,*" Section: has
+Exam "1" -- "*" Grade: has
+Exam "*" --> "1" Course: refers to
+Exam "*" <-- "*" Student: takes an
+Exam "*" <-- "1" Teacher: creates
+Exam "1" <-- "*" Answer
+Answer "1" -- "1" Question
+
+'===Board===
+
+
+    Entity Board{
+     - <<identity>> boardID
+     - <<value object>> boardTitle
+     - <<value object>> owner
+     - <<value object>> allowedUsers
+     - <<value object>> numberRows
+     - <<value object>> rowsTitles
+     - <<value object>> numberColumns
+     - <<value object>> columnsTitles
+     - boolean archived
+    }
+
+    object PostIt{
+     - <<identity>> postItID
+     - <<value object>> content
+     - <<value object>> position
+    }
+
+Board "*" -- "*" Teacher : acessed by
+Board "*" -- "*" Student : acessed by
+Board "1" -- "*" PostIt: has
+
+
+Course "1" -- "*" Class
+Course "1" -- "0,*" ExtraClass
+Course "1" -- "0,*" Board
+
+@enduml

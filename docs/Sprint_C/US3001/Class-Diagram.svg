@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" height="272px" preserveAspectRatio="none"
+     style="width:1732px;height:272px;background:#FFFFFF;" version="1.1" viewBox="0 0 1732 272" width="1732px"
+     zoomAndPan="magnify">
+    <defs/>
+    <g><!--class SBPClient-->
+        <g id="elem_SBPClient">
+            <rect codeLine="2" fill="#F1F1F1" height="196.3945" id="SBPClient" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="456" x="7" y="69.48"/>
+            <ellipse cx="198.75" cy="85.48" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M201.7231,91.1231 Q201.1421,91.4219 200.5029,91.5713 Q199.8638,91.7207 199.1582,91.7207 Q196.6514,91.7207 195.3315,90.0689 Q194.0117,88.417 194.0117,85.2959 Q194.0117,82.1665 195.3315,80.5147 Q196.6514,78.8628 199.1582,78.8628 Q199.8638,78.8628 200.5112,79.0122 Q201.1587,79.1616 201.7231,79.4605 L201.7231,82.1831 Q201.0923,81.6021 200.4988,81.3323 Q199.9053,81.0625 199.2744,81.0625 Q197.9297,81.0625 197.2449,82.1292 Q196.5601,83.1958 196.5601,85.2959 Q196.5601,87.3877 197.2449,88.4544 Q197.9297,89.521 199.2744,89.521 Q199.9053,89.521 200.4988,89.2512 Q201.0923,88.9815 201.7231,88.4004 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64"
+                  x="219.25" y="90.771">SBPClient
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="462" y1="101.48" y2="101.48"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="112.2241"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="27"
+                  y="119.0152">socket: Socket
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="128.7124"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="27"
+                  y="135.5034">input: BufferedReader
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="145.2007"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="27"
+                  y="151.9917">output: PrintWriter
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="462" y1="158.9448" y2="158.9448"/>
+            <ellipse cx="18" cy="172.689" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="27"
+                  y="176.48">startConnection(): boolean
+            </text>
+            <ellipse cx="18" cy="189.1773" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="27"
+                  y="192.9683">stopConnection(): void
+            </text>
+            <ellipse cx="18" cy="205.6655" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="346" x="27"
+                  y="209.4566">sendTestConnectionRequest(): SBPMessageFormat
+            </text>
+            <ellipse cx="18" cy="222.1538" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="325" x="27"
+                  y="225.9448">sendAuthenticateRequest(): SBPMessageFormat
+            </text>
+            <ellipse cx="18" cy="238.6421" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="313" x="27"
+                  y="242.4331">sendDisconnectRequest(): SBPMessageFormat
+            </text>
+            <rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="252.1304"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="430" x="27"
+                  y="258.9214">sendRequest(request: SBPMessageFormat): SBPMessageFormat
+            </text>
+        </g><!--class SBPMessageFormat-->
+        <g id="elem_SBPMessageFormat">
+            <rect codeLine="14" fill="#F1F1F1" height="196.3945" id="SBPMessageFormat" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="261" x="1464.5" y="69.48"/>
+            <ellipse cx="1524.75" cy="85.48" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1527.7231,91.1231 Q1527.1421,91.4219 1526.5029,91.5713 Q1525.8638,91.7207 1525.1582,91.7207 Q1522.6514,91.7207 1521.3315,90.0689 Q1520.0117,88.417 1520.0117,85.2959 Q1520.0117,82.1665 1521.3315,80.5147 Q1522.6514,78.8628 1525.1582,78.8628 Q1525.8638,78.8628 1526.5112,79.0122 Q1527.1587,79.1616 1527.7231,79.4605 L1527.7231,82.1831 Q1527.0923,81.6021 1526.4988,81.3323 Q1525.9053,81.0625 1525.2744,81.0625 Q1523.9297,81.0625 1523.2449,82.1292 Q1522.5601,83.1958 1522.5601,85.2959 Q1522.5601,87.3877 1523.2449,88.4544 Q1523.9297,89.521 1525.2744,89.521 Q1525.9053,89.521 1526.4988,89.2512 Q1527.0923,88.9815 1527.7231,88.4004 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132"
+                  x="1545.25" y="90.771">SBPMessageFormat
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1465.5" x2="1724.5" y1="101.48" y2="101.48"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1472.5" y="112.2241"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59"
+                  x="1484.5" y="119.0152">code: int
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1472.5" y="128.7124"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109"
+                  x="1484.5" y="135.5034">message: String
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1472.5" y="145.2007"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79"
+                  x="1484.5" y="151.9917">data: String
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1465.5" x2="1724.5" y1="158.9448" y2="158.9448"/>
+            <ellipse cx="1475.5" cy="172.689" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94"
+                  x="1484.5" y="176.48">getCode(): int
+            </text>
+            <ellipse cx="1475.5" cy="189.1773" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140"
+                  x="1484.5" y="192.9683">getMessage(): String
+            </text>
+            <ellipse cx="1475.5" cy="205.6655" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112"
+                  x="1484.5" y="209.4566">getData(): String
+            </text>
+            <ellipse cx="1475.5" cy="222.1538" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162"
+                  x="1484.5" y="225.9448">setCode(code: int): void
+            </text>
+            <ellipse cx="1475.5" cy="238.6421" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="235"
+                  x="1484.5" y="242.4331">setMessage(message: String): void
+            </text>
+            <ellipse cx="1475.5" cy="255.1304" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177"
+                  x="1484.5" y="258.9214">setData(data: String): void
+            </text>
+        </g><!--class SBPServer-->
+        <g id="elem_SBPServer">
+            <rect codeLine="26" fill="#F1F1F1" height="130.4414" id="SBPServer" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="522" x="498" y="102.45"/>
+            <ellipse cx="721.25" cy="118.45" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M724.2231,124.0931 Q723.6421,124.3919 723.0029,124.5413 Q722.3638,124.6907 721.6582,124.6907 Q719.1514,124.6907 717.8315,123.0389 Q716.5117,121.387 716.5117,118.2659 Q716.5117,115.1365 717.8315,113.4847 Q719.1514,111.8328 721.6582,111.8328 Q722.3638,111.8328 723.0112,111.9822 Q723.6587,112.1316 724.2231,112.4305 L724.2231,115.1531 Q723.5923,114.5721 722.9988,114.3023 Q722.4053,114.0325 721.7744,114.0325 Q720.4297,114.0325 719.7449,115.0992 Q719.0601,116.1658 719.0601,118.2659 Q719.0601,120.3577 719.7449,121.4244 Q720.4297,122.491 721.7744,122.491 Q722.4053,122.491 722.9988,122.2212 Q723.5923,121.9515 724.2231,121.3704 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67"
+                  x="741.75" y="123.741">SBPServer
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="499" x2="1019" y1="134.45" y2="134.45"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="506" y="145.1941"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="518"
+                  y="151.9852">serverSocket: ServerSocket
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="506" y="161.6824"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="518"
+                  y="168.4734">clients: List&lt;SBPClientHandler&gt;
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="499" x2="1019" y1="175.4266" y2="175.4266"/>
+            <ellipse cx="509" cy="189.1707" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="518"
+                  y="192.9617">start(): void
+            </text>
+            <ellipse cx="509" cy="205.659" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="518"
+                  y="209.45">stop(): void
+            </text>
+            <ellipse cx="509" cy="222.1473" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="496" x="518"
+                  y="225.9383">broadcast(message: SBPMessageFormat, sender: SBPClientHandler): void
+            </text>
+        </g><!--class SBPClientHandler-->
+        <g id="elem_SBPClientHandler">
+            <rect codeLine="34" fill="#F1F1F1" height="130.4414" id="SBPClientHandler" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="375" x="1054.5" y="102.45"/>
+            <ellipse cx="1178.75" cy="118.45" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1181.7231,124.0931 Q1181.1421,124.3919 1180.5029,124.5413 Q1179.8638,124.6907 1179.1582,124.6907 Q1176.6514,124.6907 1175.3315,123.0389 Q1174.0117,121.387 1174.0117,118.2659 Q1174.0117,115.1365 1175.3315,113.4847 Q1176.6514,111.8328 1179.1582,111.8328 Q1179.8638,111.8328 1180.5112,111.9822 Q1181.1587,112.1316 1181.7231,112.4305 L1181.7231,115.1531 Q1181.0923,114.5721 1180.4988,114.3023 Q1179.9053,114.0325 1179.2744,114.0325 Q1177.9297,114.0325 1177.2449,115.0992 Q1176.5601,116.1658 1176.5601,118.2659 Q1176.5601,120.3577 1177.2449,121.4244 Q1177.9297,122.491 1179.2744,122.491 Q1179.9053,122.491 1180.4988,122.2212 Q1181.0923,121.9515 1181.7231,121.3704 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118"
+                  x="1199.25" y="123.741">SBPClientHandler
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1055.5" x2="1428.5" y1="134.45" y2="134.45"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1062.5" y="145.1941"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135"
+                  x="1074.5" y="151.9852">clientSocket: Socket
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1062.5" y="161.6824"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150"
+                  x="1074.5" y="168.4734">input: BufferedReader
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1062.5" y="178.1707"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127"
+                  x="1074.5" y="184.9617">output: PrintWriter
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1055.5" x2="1428.5" y1="191.9148" y2="191.9148"/>
+            <ellipse cx="1065.5" cy="205.659" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71"
+                  x="1074.5" y="209.45">run(): void
+            </text>
+            <ellipse cx="1065.5" cy="222.1473" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="349"
+                  x="1074.5" y="225.9383">sendResponse(response: SBPMessageFormat): void
+            </text>
+        </g><!--link SBPClient to SBPMessageFormat-->
+        <g id="link_SBPClient_SBPMessageFormat">
+            <path codeLine="42"
+                  d="M410.28,69.04 C438.98,56.83 469,46.27 498.5,39.48 C599.3,16.26 1331.62,6 1429.5,39.48 C1448.05,45.82 1466.12,55.18 1483.1,66 "
+                  fill="none" id="SBPClient-to-SBPMessageFormat" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="1486.86,69.09,1481.4722,60.8455,1482.6606,66.3761,1477.13,67.5645,1486.86,69.09"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link SBPClient to SBPServer-->
+        <g id="link_SBPClient_SBPServer">
+            <path codeLine="43" d="M463.48,167.67 C472.88,167.67 482.28,167.67 491.68,167.67 " fill="none"
+                  id="SBPClient-to-SBPServer" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="496.54,167.67,487.54,163.67,491.54,167.67,487.54,171.67,496.54,167.67"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link SBPServer to SBPClientHandler-->
+        <g id="link_SBPServer_SBPClientHandler">
+            <path codeLine="44" d="M1020.31,167.67 C1029.63,167.67 1038.96,167.67 1048.28,167.67 " fill="none"
+                  id="SBPServer-to-SBPClientHandler" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="1053.08,167.67,1044.08,163.67,1048.08,167.67,1044.08,171.67,1053.08,167.67"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link SBPClientHandler to SBPMessageFormat-->
+        <g id="link_SBPClientHandler_SBPMessageFormat">
+            <path codeLine="45" d="M1429.88,167.67 C1439.31,167.67 1448.75,167.67 1458.19,167.67 " fill="none"
+                  id="SBPClientHandler-to-SBPMessageFormat" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="1463.06,167.67,1454.06,163.67,1458.06,167.67,1454.06,171.67,1463.06,167.67"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--SRC=[hLFBJiCm4BpdAtm4bVv0X2hHLeW3I5M3nDcrjyKYjOEzwGNnxspiE8dTI72WbzGpi-jzZ4NDdMFLUhUf5MXaNmMZtz8PyG5Oiif_0wPqqnAqRez7i23tm2NOG9aMFRUpIkERLTWJ2uVSuiPe3GALqJUt9JiOKmFNaJTDIb-CaZq7Mhw2cuJluRCbe9DHnI_W73_1ex5dZcF8Gullr8aI7E5F0LlbHBZYD_coaqUH3TzhwLpqTr68EEc4YGCNHaB9Q7hXU0uQoeGqqbC09KUU88iJq7GaT0N7q0xhR_1zfEejfSXXroSPIiYsCAJBYifbFlUqnYYODb-1lO0TREPFLJJRvDHFnPlIbUnPERmVNFh4jQp1hYOUown3jagHWpLS2avx6xl8Ld77klM2BLb-qLmZYM3OeWUhVteyjfrv4NjmZT4Eo7_Xpwm1OxdZmrwkhbsPis41nRYc02Uj5bUzpsN-0G00]-->
+    </g>
+</svg>

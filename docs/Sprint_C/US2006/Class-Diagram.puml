@@ -1,0 +1,42 @@
+@startuml
+
+package ui {
+    class ListExamsUI{
+    + doShow()
+    }
+}
+
+package controller {
+class ListGradesOfExamController {
+    + listGradesOfExamsOfAllCourses()
+    }
+}
+
+package service {
+class ListCoursesService {
+    + listCourses()
+    + getExamsOfACourse()
+    }
+}
+
+package repository {
+class CourseRepository {
+  + allCourses(): List<Course>
+  + getExamsOfACourse(course: Course): List<Exam>
+}
+
+class ExamRepository {
+  + getExamsByCourse(course: Course): List<Exam>
+}
+
+class ExamTakenRepository {
+  + getExamTaken (exam: Exam): List<ExamTaken>}
+}
+
+ListExamsUI ..> ListGradesOfExamController
+ListGradesOfExamController --> ListCoursesService
+ListCoursesService --> CourseRepository
+ListCoursesService --> ExamRepository
+ListCoursesService --> ExamTakenRepository
+
+@enduml

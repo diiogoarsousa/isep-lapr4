@@ -1,0 +1,54 @@
+@startuml
+package ui {
+    class ListGradesUI{
+    }
+}
+
+package controller {
+    class ListGradesController{
+    +currentUser()
+    +listMyGrades()
+    }
+}
+
+package service {
+    class UserManagementService{
+       +activeUsers()
+       +userOfIdentity()
+       }
+}
+
+package repositories {
+    class ExamTakenRepository{
+    +findGradesByUser(SystemUser)
+    }
+}
+
+package persistence {
+    class JpaExamTakenRepository {
+    +findGradesByUser(SystemUser)
+    }
+}
+
+
+package infrastructure {
+    class AuthorizationService {
+    +ensureAuthenticatedUserHasAnyOf()
+    +session()
+    }
+    class AuthzRegistry{
+    +userService()
+    +authenticationService()
+    +authorizationService()
+    }
+
+}
+
+ListGradesUI ..> ListGradesController
+ListGradesController --> UserManagementService
+ListGradesController --> ExamTakenRepository
+ListGradesController --> AuthorizationService
+AuthzRegistry -> AuthorizationService
+ExamTakenRepository --> JpaExamTakenRepository
+
+@enduml

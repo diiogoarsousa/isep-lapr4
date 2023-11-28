@@ -1,0 +1,123 @@
+
+@startuml
+actor User
+participant Client as ui
+participant Server as app
+participant BoardUtils
+participant SBPClient
+participant SBPMessageFormat
+participant SBPServerController
+participant BoardController
+participant BoardService
+participant BoardRepository
+participant Database
+
+alt
+User -> ui: choose Create Board
+activate ui
+ui -> ui: CreateBoard(client)
+activate ui
+deactivate ui
+end alt
+ui -> BoardUtils: getTitle()
+deactivate ui
+activate BoardUtils
+BoardUtils -> User: ask for title
+deactivate BoardUtils
+activate User
+User -> BoardUtils: title
+deactivate User
+activate BoardUtils
+BoardUtils -> ui: getTitle(title)
+deactivate BoardUtils
+activate ui
+ui -> BoardUtils: getRows()
+deactivate ui
+activate BoardUtils
+BoardUtils -> User: ask for rows
+deactivate BoardUtils
+activate User
+User -> BoardUtils: rows
+deactivate User
+activate BoardUtils
+BoardUtils -> ui: getRows(rows)
+deactivate BoardUtils
+activate ui
+ui -> BoardUtils: getColumns()
+deactivate ui
+activate BoardUtils
+BoardUtils -> User: ask for columns
+deactivate BoardUtils
+activate User
+User -> BoardUtils: columns
+deactivate User
+activate BoardUtils
+BoardUtils -> ui: getColumns(columns)
+deactivate BoardUtils
+activate ui
+ui -> SBPClient: startConnection()
+deactivate ui
+activate SBPClient
+SBPClient -> SBPClient:sendCreateBoardRequest(title, rows, columns)
+activate SBPClient
+deactivate SBPClient
+SBPClient -> SBPMessageFormat: toByteArray()
+deactivate SBPClient
+activate SBPMessageFormat
+SBPMessageFormat -> SBPClient: requestbytes
+deactivate SBPMessageFormat
+activate SBPClient
+SBPClient -> app: sendRequest()
+deactivate SBPClient
+activate app
+app -> SBPServerController: fromByteArray()
+deactivate app
+activate SBPServerController
+SBPServerController -> SBPMessageFormat: fromByteArray(message)
+deactivate SBPServerController
+activate SBPMessageFormat
+SBPMessageFormat -> SBPServerController: getData()
+deactivate SBPMessageFormat
+activate SBPServerController
+SBPServerController -> BoardController: createBoard(title, authentication, rows, columns)
+deactivate SBPServerController
+activate BoardController
+BoardController -> BoardService: createBoard(title, owner, nrows, ncolumns)
+deactivate BoardController
+activate BoardService
+BoardService -> Board: createBoard(title, owner, nrows, ncolumns)
+deactivate BoardService
+activate Board
+Board -> BoardService: new Board
+deactivate Board
+activate BoardService
+BoardService -> BoardRepository: save(new Board)
+deactivate BoardService
+activate BoardRepository
+BoardRepository -> Database: persist board
+deactivate BoardRepository
+activate Database
+Database -> BoardRepository: board saved
+deactivate Database
+activate BoardRepository
+BoardRepository -> BoardService: board saved
+deactivate BoardRepository
+activate BoardService
+BoardService -> BoardController: board saved
+deactivate BoardService
+activate BoardController
+BoardController -> SBPServerController: sendAcknowledgeResponse()
+deactivate BoardController
+activate SBPServerController
+SBPServerController -> app: sendResponse()
+deactivate SBPServerController
+activate app
+app -> SBPClient: responsebytes
+deactivate app
+activate SBPClient
+SBPClient -> ui: board created
+deactivate SBPClient
+activate ui
+ui -> User: board created
+deactivate ui
+@enduml

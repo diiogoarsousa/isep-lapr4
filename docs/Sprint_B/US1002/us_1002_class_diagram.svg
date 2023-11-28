@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" height="391px" preserveAspectRatio="none"
+     style="width:3281px;height:391px;background:#FFFFFF;" version="1.1" viewBox="0 0 3281 391" width="3281px"
+     zoomAndPan="magnify">
+    <defs/>
+    <g><!--class CreateCourseUi-->
+        <g id="elem_CreateCourseUi">
+            <rect codeLine="3" fill="#F1F1F1" height="64.4883" id="CreateCourseUi" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="831" x="7" y="204.21"/>
+            <ellipse cx="364.25" cy="220.21" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M367.2231,225.8531 Q366.6421,226.1519 366.0029,226.3013 Q365.3638,226.4507 364.6582,226.4507 Q362.1514,226.4507 360.8315,224.7989 Q359.5117,223.147 359.5117,220.0259 Q359.5117,216.8965 360.8315,215.2447 Q362.1514,213.5928 364.6582,213.5928 Q365.3638,213.5928 366.0112,213.7422 Q366.6587,213.8916 367.2231,214.1905 L367.2231,216.9131 Q366.5923,216.3321 365.9988,216.0623 Q365.4053,215.7925 364.7744,215.7925 Q363.4297,215.7925 362.7449,216.8592 Q362.0601,217.9258 362.0601,220.0259 Q362.0601,222.1177 362.7449,223.1844 Q363.4297,224.251 364.7744,224.251 Q365.4053,224.251 365.9988,223.9812 Q366.5923,223.7115 367.2231,223.1304 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108"
+                  x="384.75" y="225.501">CreateCourseUi
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="837" y1="236.21" y2="236.21"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="837" y1="244.21" y2="244.21"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="819" x="13"
+                  y="261.7452">createCourse(courseName, courseState, startDate, endDate, minEnrolments, maxEnrolments,
+                headTeacher, description)
+            </text>
+        </g><!--class CreateCourseController-->
+        <g id="elem_CreateCourseController">
+            <rect codeLine="7" fill="#F1F1F1" height="163.418" id="CreateCourseController" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="831" x="873" y="154.75"/>
+            <ellipse cx="1202.25" cy="170.75" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1205.2231,176.3931 Q1204.6421,176.6919 1204.0029,176.8413 Q1203.3638,176.9907 1202.6582,176.9907 Q1200.1514,176.9907 1198.8315,175.3389 Q1197.5117,173.687 1197.5117,170.5659 Q1197.5117,167.4365 1198.8315,165.7847 Q1200.1514,164.1328 1202.6582,164.1328 Q1203.3638,164.1328 1204.0112,164.2822 Q1204.6587,164.4316 1205.2231,164.7305 L1205.2231,167.4531 Q1204.5923,166.8721 1203.9988,166.6023 Q1203.4053,166.3325 1202.7744,166.3325 Q1201.4297,166.3325 1200.7449,167.3992 Q1200.0601,168.4658 1200.0601,170.5659 Q1200.0601,172.6577 1200.7449,173.7244 Q1201.4297,174.791 1202.7744,174.791 Q1203.4053,174.791 1203.9988,174.5212 Q1204.5923,174.2515 1205.2231,173.6704 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164"
+                  x="1222.75" y="176.041">CreateCourseController
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="874" x2="1703" y1="186.75" y2="186.75"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="881" y="197.4941"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="893"
+                  y="204.2852">authz: AuthorizationService
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="881" y="213.9824"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="893"
+                  y="220.7734">courseRepository: CourseRepository
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="881" y="230.4707"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="279" x="893"
+                  y="237.2617">courseStateRepo: CourseStateRepository
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="881" y="246.959"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="273" x="893"
+                  y="253.75">svcCourseStates: ListCourseStateService
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="881" y="263.4473"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="893"
+                  y="270.2383">svcCourses: ListCourseService
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="874" x2="1703" y1="277.1914" y2="277.1914"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="819" x="879"
+                  y="294.7266">createCourse(courseName, courseState, startDate, endDate, minEnrolments, maxEnrolments,
+                headTeacher, description)
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="879"
+                  y="311.2148">CourseStates()
+            </text>
+        </g><!--class CourseRepository-->
+        <g id="elem_CourseRepository">
+            <rect codeLine="17" fill="#F1F1F1" height="97.4648" id="CourseRepository" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="154" x="2010.5" y="187.73"/>
+            <ellipse cx="2025.5" cy="203.73" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M2021.4277,199.4951 L2021.4277,197.3369 L2028.8071,197.3369 L2028.8071,199.4951 L2026.3418,199.4951 L2026.3418,207.5718 L2028.8071,207.5718 L2028.8071,209.73 L2021.4277,209.73 L2021.4277,207.5718 L2023.8931,207.5718 L2023.8931,199.4951 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing"
+                  textLength="122" x="2039.5" y="209.021">CourseRepository
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2011.5" x2="2163.5" y1="219.73" y2="219.73"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2011.5" x2="2163.5" y1="227.73" y2="227.73"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86"
+                  x="2016.5" y="245.2652">save(course)
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99"
+                  x="2016.5" y="261.7534">find(identifier)
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98"
+                  x="2016.5" y="278.2417">delete(course)
+            </text>
+        </g><!--class JpaCourseRepository-->
+        <g id="elem_JpaCourseRepository">
+            <rect codeLine="23" fill="#F1F1F1" height="97.4648" id="JpaCourseRepository" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="175" x="2200" y="187.73"/>
+            <ellipse cx="2215" cy="203.73" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M2217.9731,209.3731 Q2217.3921,209.6719 2216.7529,209.8213 Q2216.1138,209.9707 2215.4082,209.9707 Q2212.9014,209.9707 2211.5815,208.3189 Q2210.2617,206.667 2210.2617,203.5459 Q2210.2617,200.4165 2211.5815,198.7647 Q2212.9014,197.1128 2215.4082,197.1128 Q2216.1138,197.1128 2216.7612,197.2622 Q2217.4087,197.4116 2217.9731,197.7105 L2217.9731,200.4331 Q2217.3423,199.8521 2216.7488,199.5823 Q2216.1553,199.3125 2215.5244,199.3125 Q2214.1797,199.3125 2213.4949,200.3792 Q2212.8101,201.4458 2212.8101,203.5459 Q2212.8101,205.6377 2213.4949,206.7044 Q2214.1797,207.771 2215.5244,207.771 Q2216.1553,207.771 2216.7488,207.5012 Q2217.3423,207.2315 2217.9731,206.6504 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143"
+                  x="2229" y="209.021">JpaCourseRepository
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2201" x2="2374" y1="219.73" y2="219.73"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2201" x2="2374" y1="227.73" y2="227.73"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="2206"
+                  y="245.2652">save(course)
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="2206"
+                  y="261.7534">find(identifier)
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="2206"
+                  y="278.2417">delete(course)
+            </text>
+        </g><!--class Course-->
+        <g id="elem_Course">
+            <rect codeLine="29" fill="#F1F1F1" height="295.3242" id="Course" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="236" x="1739.5" y="88.8"/>
+            <ellipse cx="1828.75" cy="104.8" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M1831.7231,110.4431 Q1831.1421,110.7419 1830.5029,110.8913 Q1829.8638,111.0407 1829.1582,111.0407 Q1826.6514,111.0407 1825.3315,109.3889 Q1824.0117,107.737 1824.0117,104.6159 Q1824.0117,101.4865 1825.3315,99.8347 Q1826.6514,98.1828 1829.1582,98.1828 Q1829.8638,98.1828 1830.5112,98.3322 Q1831.1587,98.4816 1831.7231,98.7805 L1831.7231,101.5031 Q1831.0923,100.9221 1830.4988,100.6523 Q1829.9053,100.3825 1829.2744,100.3825 Q1827.9297,100.3825 1827.2449,101.4492 Q1826.5601,102.5158 1826.5601,104.6159 Q1826.5601,106.7077 1827.2449,107.7744 Q1827.9297,108.841 1829.2744,108.841 Q1829.9053,108.841 1830.4988,108.5712 Q1831.0923,108.3015 1831.7231,107.7204 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49"
+                  x="1849.25" y="110.091">Course
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1740.5" x2="1974.5" y1="120.8" y2="120.8"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="131.5441"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104"
+                  x="1759.5" y="138.3352">identifier: UUID
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="148.0324"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175"
+                  x="1759.5" y="154.8234">courseName: Designation
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="164.5207"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210"
+                  x="1759.5" y="171.3117">courseState: CourseStateEnum
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="181.009"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132"
+                  x="1759.5" y="187.8">startDate: Calendar
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="197.4973"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127"
+                  x="1759.5" y="204.2883">endDate: Calendar
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="213.9855"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161"
+                  x="1759.5" y="220.7766">minEnrolments: Integer
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="230.4738"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="165"
+                  x="1759.5" y="237.2648">maxEnrolments: Integer
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="246.9621"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138"
+                  x="1759.5" y="253.7531">headTeacher: String
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="263.4504"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163"
+                  x="1759.5" y="270.2414">description: Description
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1747.5" y="279.9387"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103"
+                  x="1759.5" y="286.7297">active: boolean
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="1740.5" x2="1974.5" y1="293.6828" y2="293.6828"/>
+            <ellipse cx="1750.5" cy="307.427" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81"
+                  x="1759.5" y="311.218">getCourse()
+            </text>
+            <ellipse cx="1750.5" cy="323.9152" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54"
+                  x="1759.5" y="327.7063">toDTO()
+            </text>
+            <ellipse cx="1750.5" cy="340.4035" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128"
+                  x="1759.5" y="344.1945">toRepresentation()
+            </text>
+            <ellipse cx="1750.5" cy="356.8918" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88"
+                  x="1759.5" y="360.6828">toggleState()
+            </text>
+            <ellipse cx="1750.5" cy="373.3801" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58"
+                  x="1759.5" y="377.1711">update()
+            </text>
+        </g><!--class CourseBuilder-->
+        <g id="elem_CourseBuilder">
+            <rect codeLine="47" fill="#F1F1F1" height="179.9063" id="CourseBuilder" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="158" x="2762.5" y="146.5"/>
+            <ellipse cx="2790.55" cy="162.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M2793.5231,168.1431 Q2792.9421,168.4419 2792.3029,168.5913 Q2791.6638,168.7407 2790.9582,168.7407 Q2788.4514,168.7407 2787.1315,167.0889 Q2785.8117,165.437 2785.8117,162.3159 Q2785.8117,159.1865 2787.1315,157.5347 Q2788.4514,155.8828 2790.9582,155.8828 Q2791.6638,155.8828 2792.3112,156.0322 Q2792.9587,156.1816 2793.5231,156.4805 L2793.5231,159.2031 Q2792.8923,158.6221 2792.2988,158.3523 Q2791.7053,158.0825 2791.0744,158.0825 Q2789.7297,158.0825 2789.0449,159.1492 Q2788.3601,160.2158 2788.3601,162.3159 Q2788.3601,164.4077 2789.0449,165.4744 Q2789.7297,166.541 2791.0744,166.541 Q2791.7053,166.541 2792.2988,166.2712 Q2792.8923,166.0015 2793.5231,165.4204 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97"
+                  x="2807.45" y="167.791">CourseBuilder
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2763.5" x2="2919.5" y1="178.5" y2="178.5"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2763.5" x2="2919.5" y1="186.5" y2="186.5"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73"
+                  x="2768.5" y="204.0352">withState()
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57"
+                  x="2768.5" y="220.5234">named()
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102"
+                  x="2768.5" y="237.0117">withStartDate()
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96"
+                  x="2768.5" y="253.5">withEndDate()
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142"
+                  x="2768.5" y="269.9883">withMinEnrolments()
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146"
+                  x="2768.5" y="286.4766">withMaxEnrolments()
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129"
+                  x="2768.5" y="302.9648">withHeadTeacher()
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45"
+                  x="2768.5" y="319.4531">build()
+            </text>
+        </g><!--class CourseState-->
+        <g id="elem_CourseState">
+            <rect codeLine="58" fill="#F1F1F1" height="80.9766" id="CourseState" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="130" x="3144.5" y="195.97"/>
+            <ellipse cx="3166.25" cy="211.97" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M3169.2231,217.6131 Q3168.6421,217.9119 3168.0029,218.0613 Q3167.3638,218.2107 3166.6582,218.2107 Q3164.1514,218.2107 3162.8315,216.5589 Q3161.5117,214.907 3161.5117,211.7859 Q3161.5117,208.6565 3162.8315,207.0047 Q3164.1514,205.3528 3166.6582,205.3528 Q3167.3638,205.3528 3168.0112,205.5022 Q3168.6587,205.6516 3169.2231,205.9505 L3169.2231,208.6731 Q3168.5923,208.0921 3167.9988,207.8223 Q3167.4053,207.5525 3166.7744,207.5525 Q3165.4297,207.5525 3164.7449,208.6192 Q3164.0601,209.6858 3164.0601,211.7859 Q3164.0601,213.8777 3164.7449,214.9444 Q3165.4297,216.011 3166.7744,216.011 Q3167.4053,216.011 3167.9988,215.7412 Q3168.5923,215.4715 3169.2231,214.8904 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83"
+                  x="3181.75" y="217.261">CourseState
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3145.5" x2="3273.5" y1="227.97" y2="227.97"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3152.5" y="238.7141"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104"
+                  x="3164.5" y="245.5052">identifier: UUID
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="3152.5" y="255.2024"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87"
+                  x="3164.5" y="261.9934">name: String
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="3145.5" x2="3273.5" y1="268.9466" y2="268.9466"/>
+        </g><!--class CourseStateEnum-->
+        <g id="elem_CourseStateEnum">
+            <rect codeLine="63" fill="#F1F1F1" height="130.4414" id="CourseStateEnum" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="154" x="2955.5" y="171.24"/>
+            <ellipse cx="2970.5" cy="187.24" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M2974.6143,193.24 L2966.8945,193.24 L2966.8945,180.8469 L2974.6143,180.8469 L2974.6143,183.0051 L2969.3433,183.0051 L2969.3433,185.678 L2974.1162,185.678 L2974.1162,187.8362 L2969.3433,187.8362 L2969.3433,191.0818 L2974.6143,191.0818 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122"
+                  x="2984.5" y="192.531">CourseStateEnum
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2956.5" x2="3108.5" y1="203.24" y2="203.24"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35"
+                  x="2961.5" y="220.7752">close
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35"
+                  x="2961.5" y="237.2634">open
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40"
+                  x="2961.5" y="253.7517">enroll
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78"
+                  x="2961.5" y="270.24">in progress
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44"
+                  x="2961.5" y="286.7283">closed
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2956.5" x2="3108.5" y1="293.6814" y2="293.6814"/>
+        </g><!--class CourseStartDate-->
+        <g id="elem_CourseStartDate">
+            <rect codeLine="71" fill="#F1F1F1" height="80.9766" id="CourseStartDate" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="144" x="2583.5" y="195.97"/>
+            <ellipse cx="2598.5" cy="211.97" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M2601.4731,217.6131 Q2600.8921,217.9119 2600.2529,218.0613 Q2599.6138,218.2107 2598.9082,218.2107 Q2596.4014,218.2107 2595.0815,216.5589 Q2593.7617,214.907 2593.7617,211.7859 Q2593.7617,208.6565 2595.0815,207.0047 Q2596.4014,205.3528 2598.9082,205.3528 Q2599.6138,205.3528 2600.2612,205.5022 Q2600.9087,205.6516 2601.4731,205.9505 L2601.4731,208.6731 Q2600.8423,208.0921 2600.2488,207.8223 Q2599.6553,207.5525 2599.0244,207.5525 Q2597.6797,207.5525 2596.9949,208.6192 Q2596.3101,209.6858 2596.3101,211.7859 Q2596.3101,213.8777 2596.9949,214.9444 Q2597.6797,216.011 2599.0244,216.011 Q2599.6553,216.011 2600.2488,215.7412 Q2600.8423,215.4715 2601.4731,214.8904 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112"
+                  x="2612.5" y="217.261">CourseStartDate
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2584.5" x2="2726.5" y1="227.97" y2="227.97"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2591.5" y="238.7141"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69"
+                  x="2603.5" y="245.5052">date: Date
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2591.5" y="255.2024"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72"
+                  x="2603.5" y="261.9934">time: Time
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2584.5" x2="2726.5" y1="268.9466" y2="268.9466"/>
+        </g><!--class CourseEndDate-->
+        <g id="elem_CourseEndDate">
+            <rect codeLine="76" fill="#F1F1F1" height="80.9766" id="CourseEndDate" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="138" x="2410.5" y="195.97"/>
+            <ellipse cx="2425.5" cy="211.97" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M2428.4731,217.6131 Q2427.8921,217.9119 2427.2529,218.0613 Q2426.6138,218.2107 2425.9082,218.2107 Q2423.4014,218.2107 2422.0815,216.5589 Q2420.7617,214.907 2420.7617,211.7859 Q2420.7617,208.6565 2422.0815,207.0047 Q2423.4014,205.3528 2425.9082,205.3528 Q2426.6138,205.3528 2427.2612,205.5022 Q2427.9087,205.6516 2428.4731,205.9505 L2428.4731,208.6731 Q2427.8423,208.0921 2427.2488,207.8223 Q2426.6553,207.5525 2426.0244,207.5525 Q2424.6797,207.5525 2423.9949,208.6192 Q2423.3101,209.6858 2423.3101,211.7859 Q2423.3101,213.8777 2423.9949,214.9444 Q2424.6797,216.011 2426.0244,216.011 Q2426.6553,216.011 2427.2488,215.7412 Q2427.8423,215.4715 2428.4731,214.8904 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106"
+                  x="2439.5" y="217.261">CourseEndDate
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2411.5" x2="2547.5" y1="227.97" y2="227.97"/>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2418.5" y="238.7141"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69"
+                  x="2430.5" y="245.5052">date: Date
+            </text>
+            <rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2418.5" y="255.2024"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72"
+                  x="2430.5" y="261.9934">time: Time
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="2411.5" x2="2547.5" y1="268.9466" y2="268.9466"/>
+        </g><!--link CreateCourseUi to CreateCourseController-->
+        <g id="link_CreateCourseUi_CreateCourseController">
+            <path codeLine="81" d="M838.16,236.46 C847.75,236.46 857.34,236.46 866.93,236.46 " fill="none"
+                  id="CreateCourseUi-to-CreateCourseController" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="871.91,236.46,862.91,232.46,866.91,236.46,862.91,240.46,871.91,236.46"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CreateCourseController to CourseBuilder-->
+        <g id="link_CreateCourseController_CourseBuilder">
+            <path codeLine="82"
+                  d="M1453.02,154.32 C1536.46,117.18 1640.71,77.48 1739,58.8 C1846.96,38.28 2631.62,6 2728,58.8 C2760.91,76.82 2785.66,108.9 2803.51,140.89 "
+                  fill="none" id="CreateCourseController-to-CourseBuilder" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="2806.32,145.02,2805.5085,135.2046,2803.9197,140.6338,2798.4906,139.0451,2806.32,145.02"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CreateCourseController to CourseState-->
+        <g id="link_CreateCourseController_CourseState">
+            <path codeLine="83"
+                  d="M1453.02,154.32 C1536.46,117.18 1640.71,77.48 1739,58.8 C1813.83,44.57 3043.95,20.86 3110,58.8 C3158.26,86.52 3184.79,147.33 3198.07,190.05 "
+                  fill="none" id="CreateCourseController-to-CourseState" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="3199.78,194.69,3200.9851,184.9151,3198.3236,189.9068,3193.332,187.2453,3199.78,194.69"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CourseStateEnum to CourseState-->
+        <g id="link_CourseStateEnum_CourseState">
+            <path codeLine="84" d="M3109.94,236.46 C3119.38,236.46 3128.83,236.46 3138.28,236.46 " fill="none"
+                  id="CourseStateEnum-to-CourseState" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="3143.16,236.46,3134.16,232.46,3138.16,236.46,3134.16,240.46,3143.16,236.46"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CreateCourseController to CourseStartDate-->
+        <g id="link_CreateCourseController_CourseStartDate">
+            <path codeLine="85"
+                  d="M1453.02,154.32 C1536.46,117.18 1640.71,77.48 1739,58.8 C1827.42,41.99 2470.69,14.44 2549,58.8 C2598.26,86.7 2627.21,147.47 2642.2,190.14 "
+                  fill="none" id="CreateCourseController-to-CourseStartDate" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="2644.14,194.77,2644.9912,184.958,2642.5118,190.0425,2637.4273,187.5631,2644.14,194.77"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CreateCourseController to CourseEndDate-->
+        <g id="link_CreateCourseController_CourseEndDate">
+            <path codeLine="86"
+                  d="M1453.02,154.32 C1536.46,117.18 1640.71,77.48 1739,58.8 C1808.42,45.6 2313.66,23.71 2375,58.8 C2423.9,86.77 2452.18,147.52 2466.7,190.16 "
+                  fill="none" id="CreateCourseController-to-CourseEndDate" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="2468.58,194.79,2469.5464,184.9887,2467.0074,190.0437,2461.9524,187.5048,2468.58,194.79"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CreateCourseController to CourseRepository-->
+        <g id="link_CreateCourseController_CourseRepository">
+            <path codeLine="87"
+                  d="M1453.02,154.32 C1536.46,117.18 1640.71,77.48 1739,58.8 C1842.48,39.13 1883.82,7.82 1976,58.8 C2022.97,84.77 2052.81,139.72 2069.68,181.68 "
+                  fill="none" id="CreateCourseController-to-CourseRepository" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="2071.88,186.25,2072.2879,176.4096,2070.0403,181.6008,2064.8491,179.3532,2071.88,186.25"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CourseRepository to JpaCourseRepository-->
+        <g id="link_CourseRepository_JpaCourseRepository">
+            <path codeLine="88" d="M2164.84,236.46 C2174.59,236.46 2184.34,236.46 2194.08,236.46 " fill="none"
+                  id="CourseRepository-to-JpaCourseRepository" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="2198.82,236.46,2189.82,232.46,2193.82,236.46,2189.82,240.46,2198.82,236.46"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--link CreateCourseController to Course-->
+        <g id="link_CreateCourseController_Course">
+            <path codeLine="89" d="M1704.41,236.46 C1713.99,236.46 1723.56,236.46 1733.14,236.46 " fill="none"
+                  id="CreateCourseController-to-Course" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="1738.1,236.46,1729.1,232.46,1733.1,236.46,1729.1,240.46,1738.1,236.46"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+        </g><!--SRC=[lLJBRjim4BphAtXqKES7T2ZGsWQQ8cc1slu0XbpB2z2aG59kcwB_NhuahwG4wgNrmI9dPwdHx7A5uiwnZGNkOMCww-28x5V5mayGS2NIumk_m9hbzTw7w9evpwtVfYLecHSNr3jjZRg0zYvi-G-wFGEN1-3Y37RD93XXiVLez5trkwh4JC_6Q1-I5TYYwvxnpfzVQlOXF8p55nwpzs2lAA0miiHlq1g7tjYVDTjCa14nVKkCzRm1697TLP2mgzaZEa-GiOQ1FIOIplztEBwLVi8gcOxQWprn0JENYkMENtk1-OmJQhb26Lw79mIRGGaA_8qtLFDpo__9kVdGeIjkQJKx7X-semf7Nsks1OUDJlqoh_-ezZlTNVewzlu70bUX1DoMI2d731zLfsOFmTu6XY2jrJH8AbUplRUecn8XPKpVqM_wAo4yNeEIPsCKy8o-OmsKhblT5SIRxU4hsOMIM711IZA519f6PIS6h6jbtauAyB539OVR-HtzcURfOBmiwnBBRX9ibtqao1DraEBKF89_klbMqEUeQYusILjg6PsQfTWV3e3G3DFcw8UaCYvVPjD2jXsYG9MMg5bhJHCSTZUsV4LJjcJG9LDNHQW07gEYG_YV9XVl_ZPrCkdltxynQwitHd1Ce5LVv2N3ggbvq_3o8TcXHMQnOv57PljiDWNIAoDhySW_]-->
+    </g>
+</svg>

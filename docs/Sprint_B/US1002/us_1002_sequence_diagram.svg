@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" height="1117px" preserveAspectRatio="none"
+     style="width:1588px;height:1117px;background:#FFFFFF;" version="1.1" viewBox="0 0 1588 1117" width="1588px"
+     zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <rect fill="#FFFFFF" height="59.9316" style="stroke:#181818;stroke-width:1.0;" width="10" x="376" y="143.4199"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="376" y="988.9414"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="724" y="203.3516"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="724" y="725.1465"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="724" y="901.0098"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="724" y="959.6309"/>
+        <rect fill="#FFFFFF" height="463.1738" style="stroke:#181818;stroke-width:1.0;" width="10" x="892"
+              y="232.6621"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="269.9727"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="342.2832"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="414.5938"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="486.9043"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="559.2148"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="631.5254"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1146"
+              y="695.8359"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1146"
+              y="871.6992"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1146"
+              y="930.3203"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1255.5"
+              y="754.457"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1412"
+              y="783.7676"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1412"
+              y="842.3887"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1539"
+              y="813.0781"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="38" x2="38" y1="81.4883"
+              y2="1036.252"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="381" x2="381" y1="81.4883"
+              y2="1036.252"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="729" x2="729" y1="81.4883"
+              y2="1036.252"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="896.5" x2="896.5" y1="81.4883"
+              y2="1036.252"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1150.5" x2="1150.5" y1="81.4883"
+              y2="1036.252"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1260.5" x2="1260.5" y1="81.4883"
+              y2="1036.252"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1416.5" x2="1416.5" y1="81.4883"
+              y2="1036.252"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1543.5" x2="1543.5" y1="81.4883"
+              y2="1036.252"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="5"
+              y="78.5352">Manager
+        </text>
+        <ellipse cx="38" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/>
+        <path d="M38,21.5 L38,48.5 M25,29.5 L51,29.5 M38,48.5 L25,63.5 M38,48.5 L51,63.5 " fill="none"
+              style="stroke:#181818;stroke-width:0.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="5"
+              y="1048.7871">Manager
+        </text>
+        <ellipse cx="38" cy="1060.2402" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/>
+        <path d="M38,1068.2402 L38,1095.2402 M25,1076.2402 L51,1076.2402 M38,1095.2402 L25,1110.2402 M38,1095.2402 L51,1110.2402 "
+              fill="none" style="stroke:#181818;stroke-width:0.5;"/>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="122"
+              x="320" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="327"
+              y="70.5352">CreateCourseUi
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="122"
+              x="320" y="1035.252"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="327"
+              y="1055.7871">CreateCourseUi
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="178"
+              x="640" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="647"
+              y="70.5352">CreateCourseController
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="178"
+              x="640" y="1035.252"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="647"
+              y="1055.7871">CreateCourseController
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111"
+              x="841.5" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="848.5"
+              y="70.5352">CourseBuilder
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111"
+              x="841.5" y="1035.252"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="848.5"
+              y="1055.7871">CourseBuilder
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="63"
+              x="1119.5" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="1126.5"
+              y="70.5352">Course
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="63"
+              x="1119.5" y="1035.252"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="1126.5"
+              y="1055.7871">Course
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136"
+              x="1192.5" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="1199.5"
+              y="70.5352">CourseRepository
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136"
+              x="1192.5" y="1035.252"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="1199.5"
+              y="1055.7871">CourseRepository
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="157"
+              x="1338.5" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="1345.5"
+              y="70.5352">JpaCourseRepository
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="157"
+              x="1338.5" y="1035.252"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="1345.5"
+              y="1055.7871">JpaCourseRepository
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="77"
+              x="1505.5" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="1512.5"
+              y="70.5352">Database
+        </text>
+        <rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="77"
+              x="1505.5" y="1035.252"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="1512.5"
+              y="1055.7871">Database
+        </text>
+        <rect fill="#FFFFFF" height="59.9316" style="stroke:#181818;stroke-width:1.0;" width="10" x="376" y="143.4199"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="376" y="988.9414"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="724" y="203.3516"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="724" y="725.1465"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="724" y="901.0098"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="724" y="959.6309"/>
+        <rect fill="#FFFFFF" height="463.1738" style="stroke:#181818;stroke-width:1.0;" width="10" x="892"
+              y="232.6621"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="269.9727"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="342.2832"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="414.5938"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="486.9043"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="559.2148"/>
+        <rect fill="#FFFFFF" height="28" style="stroke:#181818;stroke-width:1.0;" width="10" x="897" y="631.5254"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1146"
+              y="695.8359"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1146"
+              y="871.6992"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1146"
+              y="930.3203"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1255.5"
+              y="754.457"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1412"
+              y="783.7676"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1412"
+              y="842.3887"/>
+        <rect fill="#FFFFFF" height="29.3105" style="stroke:#181818;stroke-width:1.0;" width="10" x="1539"
+              y="813.0781"/>
+        <polygon fill="#181818" points="364,139.4199,374,143.4199,364,147.4199,368,143.4199"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="38" x2="370" y1="143.4199" y2="143.4199"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="315" x="45"
+              y="108.0566">createCourse(courseName, courseState, startDate,
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="265" x="45"
+              y="123.3672">endDate, minEnrolments, maxEnrolments,
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="45"
+              y="138.6777">headTeacher, description)
+        </text>
+        <polygon fill="#181818" points="712,199.3516,722,203.3516,712,207.3516,716,203.3516"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="381" x2="718" y1="203.3516" y2="203.3516"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="315" x="388"
+              y="167.9883">createCourse(courseName, courseState, startDate,
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="265" x="388"
+              y="183.2988">endDate, minEnrolments, maxEnrolments,
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="388"
+              y="198.6094">headTeacher, description)
+        </text>
+        <polygon fill="#181818" points="880,228.6621,890,232.6621,880,236.6621,884,232.6621"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="729" x2="886" y1="232.6621" y2="232.6621"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="139" x="736"
+              y="227.9199">withState(courseState)
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="907" x2="949" y1="261.9727" y2="261.9727"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="949" x2="949" y1="261.9727" y2="274.9727"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="908" x2="949" y1="274.9727" y2="274.9727"/>
+        <polygon fill="#181818" points="918,270.9727,908,274.9727,918,278.9727,914,274.9727"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="914"
+              y="257.2305">named(courseName)
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="907" x2="949" y1="334.2832" y2="334.2832"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="949" x2="949" y1="334.2832" y2="347.2832"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="908" x2="949" y1="347.2832" y2="347.2832"/>
+        <polygon fill="#181818" points="918,343.2832,908,347.2832,918,351.2832,914,347.2832"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="151" x="914"
+              y="329.541">withStartDate(startDate)
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="907" x2="949" y1="406.5938" y2="406.5938"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="949" x2="949" y1="406.5938" y2="419.5938"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="908" x2="949" y1="419.5938" y2="419.5938"/>
+        <polygon fill="#181818" points="918,415.5938,908,419.5938,918,423.5938,914,419.5938"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="139" x="914"
+              y="401.8516">withEndDate(endDate)
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="907" x2="949" y1="478.9043" y2="478.9043"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="949" x2="949" y1="478.9043" y2="491.9043"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="908" x2="949" y1="491.9043" y2="491.9043"/>
+        <polygon fill="#181818" points="918,487.9043,908,491.9043,918,495.9043,914,491.9043"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="224" x="914"
+              y="474.1621">withMinEnrolments(minEnrolments)
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="907" x2="949" y1="551.2148" y2="551.2148"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="949" x2="949" y1="551.2148" y2="564.2148"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="908" x2="949" y1="564.2148" y2="564.2148"/>
+        <polygon fill="#181818" points="918,560.2148,908,564.2148,918,568.2148,914,564.2148"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="230" x="914"
+              y="546.4727">withMaxEnrolments(maxEnrolments)
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="907" x2="949" y1="623.5254" y2="623.5254"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="949" x2="949" y1="623.5254" y2="636.5254"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="908" x2="949" y1="636.5254" y2="636.5254"/>
+        <polygon fill="#181818" points="918,632.5254,908,636.5254,918,640.5254,914,636.5254"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="195" x="914"
+              y="618.7832">withHeadTeacher(headTeacher)
+        </text>
+        <polygon fill="#181818" points="1134,691.8359,1144,695.8359,1134,699.8359,1138,695.8359"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="897" x2="1140" y1="695.8359" y2="695.8359"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="904"
+              y="691.0938">build()
+        </text>
+        <polygon fill="#181818" points="745,721.1465,735,725.1465,745,729.1465,741,725.1465"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="739" x2="1150" y1="725.1465" y2="725.1465"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="751"
+              y="720.4043">return
+        </text>
+        <polygon fill="#181818" points="1243.5,750.457,1253.5,754.457,1243.5,758.457,1247.5,754.457"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="729" x2="1249.5" y1="754.457" y2="754.457"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="736"
+              y="749.7148">save(course)
+        </text>
+        <polygon fill="#181818" points="1400,779.7676,1410,783.7676,1400,787.7676,1404,783.7676"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1260.5" x2="1406" y1="783.7676" y2="783.7676"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="1267.5"
+              y="779.0254">save(course)
+        </text>
+        <polygon fill="#181818" points="1527,809.0781,1537,813.0781,1527,817.0781,1531,813.0781"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1417" x2="1533" y1="813.0781" y2="813.0781"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="1424"
+              y="808.3359">insert(course)
+        </text>
+        <polygon fill="#181818" points="1433,838.3887,1423,842.3887,1433,846.3887,1429,842.3887"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1427" x2="1543" y1="842.3887" y2="842.3887"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="1439"
+              y="837.6465">return
+        </text>
+        <polygon fill="#181818" points="1167,867.6992,1157,871.6992,1167,875.6992,1163,871.6992"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1161" x2="1416" y1="871.6992" y2="871.6992"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="1173"
+              y="866.957">return
+        </text>
+        <polygon fill="#181818" points="745,897.0098,735,901.0098,745,905.0098,741,901.0098"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="739" x2="1150" y1="901.0098" y2="901.0098"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="751"
+              y="896.2676">return
+        </text>
+        <polygon fill="#181818" points="1134,926.3203,1144,930.3203,1134,934.3203,1138,930.3203"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="729" x2="1140" y1="930.3203" y2="930.3203"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="736"
+              y="925.5781">getCourse()
+        </text>
+        <polygon fill="#181818" points="745,955.6309,735,959.6309,745,963.6309,741,959.6309"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="739" x2="1150" y1="959.6309" y2="959.6309"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="751"
+              y="954.8887">courseCreated(course)
+        </text>
+        <polygon fill="#181818" points="397,984.9414,387,988.9414,397,992.9414,393,988.9414"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="391" x2="728" y1="988.9414" y2="988.9414"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="403"
+              y="984.1992">courseCreated(course)
+        </text>
+        <polygon fill="#181818" points="49,1014.252,39,1018.252,49,1022.252,45,1018.252"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="43" x2="380" y1="1018.252" y2="1018.252"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="55"
+              y="1013.5098">courseCreated(course)
+        </text><!--SRC=[nLPDRy8m3BtdL-GOfEuFzB33EgHf4ZjiuyR5D1P4WXGbXct_VkbtMb8Oi8fJObjvxpcssq1AcU4pqB12mwgLFppon20G9jdUM9ohcAUUBT9YUOCjHhpSVv2BHjmI67ekjWkDMfRRhT9JRRBD5ZLPPyAtRoxq6a5-8gHhD16NQ5EZTgGoFM6GaZeuZ9uSrZNxUfDCayFVeBcNReb3oeF-LZ0BkuiC2z_JNcradjYNedMXNdYP339x36tS1sGTAy2dtQr9xmOdGq2-WeiOgepAGeYc9ECGJSiYYwhOuv3C_0OIdNOQYT1lKT5fs748NzeH4Duu_1jPp9UvIqo6J_RS5TAfRu91sXjzZ7ZpSBxZBhFAVL5_OcxXK8_c5LFP8h6-8wTxtS45Z7t49XA0OG5VpkY619QG5qHfYuP2H26u9bW3i7epcCTnUPgproYl6-aOzgJU-tTJp5T8rP_hYXRwW_IoXcLK3hVEBPdqdn5d6S_bTkuXKBrXBgIQgry0]-->
+    </g>
+</svg>

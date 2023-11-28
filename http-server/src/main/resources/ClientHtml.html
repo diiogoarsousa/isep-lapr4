@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Board Management System</title>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Login script -->
+    <script src="login.js"></script>
+
+    <!-- CSS Stylesheets -->
+    <link href="./css/styles.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            height: 50px;
+            background-color: coral;
+            color: lightsteelblue;
+            text-align: center;
+        }
+
+        #login-form {
+            width: 400px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 30px;
+            background-color: lightsteelblue;
+            border-radius: 6px;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: .5rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 14px 20px;
+            background-color: cadetblue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            position: relative;
+            bottom: -10px;
+            left: -10px;
+            right: -10px;
+            height: auto;
+            background-color: lightsteelblue;
+            color: gray;
+            line-height: normal;
+            text-align: center;
+        }
+
+        .main-content {
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+    <h2>Remote Application Interface</h2>
+</div>
+
+<!-- Login form -->
+<div id="login-form">
+    <h1>Login Form</h1>
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text"><br><br>
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password"><br><br>
+        <button type="submit">Login</button>
+        <div id="message"></div>
+        <script>
+            $(document).ready(function () {
+                $('#login-form').submit(function (event) {
+                    event.preventDefault();
+                    var username = $('#username').val();
+                    var password = $('#password').val();
+                    $.ajax({
+                        type: 'POST',
+                        url: '/login',
+                        data: {username: username, password: password},
+                        dataType: 'json',
+                        success: function (data) {
+                            if (data.success) {
+                                window.location.href = '/SubMenu.html';
+                            } else {
+                                $('#message').text('Login failed');
+                            }
+                        },
+                        error: function () {
+                            $('#message').text('An error occurred');
+                        }
+                    });
+                });
+            });
+        </script>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+
+@startuml
+
+actor User
+participant Client as ui
+
+alt
+User -> ui: choose
+note right:"test connection" | "login" | "disconnect"
+activate ui
+ui -> SBPClient: startConnection()
+deactivate ui
+end alt
+activate SBPClient
+alt
+SBPClient -> SBPClient: sendCommunicationsTestRequest()
+activate SBPClient
+deactivate SBPClient
+SBPClient -> SBPClient: sendEndOfSessionrequest()
+activate SBPClient
+deactivate SBPClient
+end alt
+SBPClient -> SBPMessageFormat: toByteArray()
+deactivate SBPClient
+activate SBPMessageFormat
+SBPMessageFormat -> SBPClient: requestbytes
+deactivate SBPMessageFormat
+activate SBPClient
+SBPClient -> SBPServer: sendRequest()
+deactivate SBPClient
+activate SBPServer
+SBPServer -> SBPClientHandler: communicationTest
+deactivate SBPServer
+activate SBPClientHandler
+SBPClientHandler -> SBPCodeEnum: getcode()
+deactivate SBPClientHandler
+activate SBPCodeEnum
+SBPCodeEnum -> SBPClientHandler: code
+deactivate SBPCodeEnum
+activate SBPClientHandler
+SBPClientHandler -> SBPServer: code
+deactivate SBPClientHandler
+activate SBPServer
+SBPServer -> SBPClient: return
+deactivate SBPServer
+activate SBPClient
+SBPClient -> SBPMessageFormat: fromByteArray(responsebytes)
+deactivate SBPClient
+activate SBPMessageFormat
+SBPMessageFormat -> SBPClient: responsebytes
+deactivate SBPMessageFormat
+activate SBPClient
+SBPClient -> ui: return message
+deactivate SBPClient
+activate ui
+ui -> User: display appropriate message
+deactivate ui
+
+alt
+User -> ui: choose
+note right:"test connection" | "login" | "disconnect"
+activate ui
+ui -> SBPClient: startConnection()
+deactivate ui
+activate SBPClient
+end alt
+activate SBPClient
+alt
+SBPClient -> SBPClient:sendAuthenticationRequest(username, password)
+activate SBPClient
+deactivate SBPClient
+SBPClient -> SBPMessageFormat: toByteArray()
+deactivate SBPClient
+activate SBPMessageFormat
+SBPMessageFormat -> SBPClient: requestbytes
+deactivate SBPMessageFormat
+activate SBPClient
+SBPClient -> SBPServer: sendRequest()
+deactivate SBPClient
+activate SBPServer
+SBPServer -> SBPClientHandler: authenticationRequest
+deactivate SBPServer
+activate SBPClientHandler
+SBPClientHandler -> SBPCodeEnum: getcode()
+deactivate SBPClientHandler
+activate SBPCodeEnum
+SBPCodeEnum -> SBPClientHandler: code
+deactivate SBPCodeEnum
+activate SBPClientHandler
+SBPClientHandler -> SBPServer: code
+deactivate SBPClientHandler
+activate SBPServer
+SBPServer -> AuthzRegistry: authenticationService()
+deactivate SBPServer
+activate AuthzRegistry
+AuthzRegistry -> SBPServer: return
+deactivate AuthzRegistry
+activate SBPServer
+SBPServer -> SBPClient: return
+deactivate SBPServer
+activate SBPClient
+SBPClient -> SBPMessageFormat: fromByteArray(responsebytes)
+deactivate SBPClient
+activate SBPMessageFormat
+SBPMessageFormat -> SBPClient: responsebytes
+deactivate SBPMessageFormat
+activate SBPClient
+SBPClient -> ui: return message
+deactivate SBPClient
+activate ui
+ui -> User: display appropriate message
+deactivate ui
+
+@enduml

@@ -1,0 +1,76 @@
+@startuml
+
+title Learning Systems (LS)
+
+skinparam classAttributeIconSize 5
+skinparam nodesep 50
+skinparam ranksep 50
+skinparam packageStyle rect
+skinparam backgroundColor #EEEBDC
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam defaultFontColor #0000FF
+skinparam alignement left
+left to right direction
+
+Entity Manager{
+}
+
+Entity Teacher{
+}
+
+Entity Student{
+}
+
+Entity User {
+}
+
+Entity Course_Class {
+}
+
+Entity Exam{
+}
+
+Entity Grade{
+}
+
+Entity Course{
+}
+
+Entity Course_Class{
+}
+
+Entity PostIt{
+}
+
+Entity Board{
+}
+
+Entity Meeting{
+}
+
+User "*" -- "*" Meeting : participate
+Manager "1" -- "*" User : manage
+Manager "1" -- "*" Course : manage
+User "1" -- "*" Manager : is a
+
+Course "1" -- "1..*" Teacher : has
+User "1" -- "*" Teacher : is a
+
+User "1" -- "*" Student : is a
+User "1"-- "*" Course : takes
+User "1" -- "*" Board : has
+
+Course "*"-- "*" User : has
+Course "1"-- "*" Exam : contains
+
+Exam "1"-- "*" Grade : has
+Teacher "1" -- "*" Exam : creates
+Student "1" -- "*" Exam : takes
+
+Course "1"-- "*" Course_Class : has
+Course_Class "1"-- "1..*" Teacher : has
+
+Board "*"-- "*" PostIt : has
+
+@enduml

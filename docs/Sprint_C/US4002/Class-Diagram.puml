@@ -1,0 +1,67 @@
+@startuml
+package ui {
+    class CancelMeetingUI{
+    +showMyMeetings()
+    }
+}
+
+package controller {
+    class CancelMeetingController{
+    +activeUsers()
+    +currentUser()
+    +cancelMeeting(Meeting)
+    +listMyMeetings()
+    }
+}
+
+package service {
+    class UserManagementService{
+       +activeUsers()
+       +userOfIdentity()
+       }
+}
+
+package repositories {
+    class MeetingRepository{
+    +findMeetingsByUser(SystemUser)
+    +findByDayAndUser(Calendar,SystemUser))
+    +findParticipantsByDay(Calendar,SystemUser)
+    +save(Meeting)
+    +delete(Meeting)
+    }
+}
+
+package persistence {
+    class JpaMeetingRepository {
+    +save(Meeting)
+    +findMeetingsByUser(SystemUser)
+    +findByDayAndUser(Calendar,User)
+
+    }
+}
+
+
+package infrastructure {
+    class AuthorizationService {
+    +ensureAuthenticatedUserHasAnyOf()
+    +session()
+    }
+    class AuthzRegistry{
+    +userService()
+    +authenticationService()
+    +authorizationService()
+    }
+
+}
+
+CancelMeetingUI ..> CancelMeetingController
+CancelMeetingController --> UserManagementService
+CancelMeetingController --> MeetingRepository
+CancelMeetingController --> AuthorizationService
+AuthzRegistry -> AuthorizationService
+MeetingRepository --> JpaMeetingRepository
+
+@enduml
+
+
+

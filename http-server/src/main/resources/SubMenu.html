@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        height: 50px;
+        background-color: coral;
+        color: lightsteelblue;
+        text-align: center;
+    }
+
+    #login-form {
+        width: 400px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+        background-color: lightsteelblue;
+        border-radius: 6px;
+
+    }
+
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: .5rem
+    }
+
+    label {
+        font-weight: bold
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 14 xp20 px;
+        background-color: cadetblue;
+        color: white;
+        border: none;
+        border-radius: 6 p x;
+        cursor: pointer
+
+    }
+
+
+    h1 {
+        text-align: center
+    }
+
+    p {
+        position: relative;
+        bottom: -10px;
+        left: -10 p x;
+        right: -10px;
+
+        height: auto;
+        background-color: lightsteelblue;
+        color: gray;
+        line-height: normal;
+        text-align: center
+
+    }
+
+    .main-content {
+        margin: 50px;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Board Management System</title>
+
+    <!-- CSS Stylesheets -->
+    <link href="./css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+    <h2>Remote Application Interface</h2>
+</div>
+
+<!-- Main content area -->
+<div class="main-content ">
+    <!-- Create Board Section -->
+    <section class="section-container create-board-container" id="create-board-section">
+        <!-- ...HTML Code for "Create a Board" view... -->
+
+        <!-- add form to create board-->
+        <form id='create-board-form'>
+
+            <!-- add title of board-->
+            <div class='row'>
+                <label for='title'>Title:</label>
+                <input id='title' name='title' placeholder='Enter title of board' required type='text'>
+            </div>
+
+            <!-- add number of rows in board-->
+            <div class='row'>
+                <label for='rows'>Rows:</label>
+                <input id='rows' name='rows' placeholder='Enter number of rows' required type='number'>
+            </div>
+
+            <!-- add number of columns in board-->
+            <div class='row'>
+                <label for='columns'>Columns:</label>
+                <input id='columns' name='columns' placeholder='Enter number of columns' required type='number'>
+            </div>
+
+            <!-- add button to submit form-->
+            <div class='row'>
+                <button type='submit'>Create Board</button>
+            </div>
+
+        </form>
+        <div id="message"></div>
+        <script>
+            const form = document.getElementById('create-board-form');
+            const message = document.getElementById('message');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const title = document.getElementById('title').value;
+                const rows = document.getElementById('rows').value;
+                const columns = document.getElementById('columns').value;
+                const data = {title, rows, columns};
+                fetch('/create-board', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        message.textContent = data.message;
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        message.textContent = 'Failed to create board.';
+                    });
+            });
+        </script>
+
+    </section>
+
+
+    <!-- Share Board Section -->
+    <section class="section-container share-board-container hide-element" id="share-board-section">
+        <!-- ...HTML Code for "Share a Board" view... -->
+
+        <!-- add form to share board-->
+        <form id='share-board-form'>
+
+            <!-- add title of board-->
+            <div class='row'>
+                <label for='title'>Title:</label>
+                <input id='title' name='title' placeholder='Enter title of board' required type='text'>
+            </div>
+
+            <!-- add username/email field -->
+            <div class='row'>
+                <label for='username'>Username/Email:</label>
+                <input id='username' name='username' placeholder="Enter username or email address" required type='text'>
+            </div>
+
+            <!-- add button to submit form-->
+            <div class='row'>
+                <button type='submit'>Share Board</button>
+            </div>
+
+
+        </form>
+
+        <!-- display message after sharing -->
+        <div id="message"></div>
+
+        <script>
+            const form = document.getElementById('share-board-form');
+            const message = document.getElementById('message');
+
+            // handle submission of the form
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                // get values from input fields
+                const title = document.getElementById('title').value;
+                const usernameOrEmail = document.getElementById('username').value;
+
+                // create data object and send POST request
+                const data = {title, recipient: usernameOrEmail};
+
+                fetch('/share-board', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        message.textContent = data.message;
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        message.textContent = 'Failed to share board.';
+                    });
+            });
+        </script>
+    </section>
+
+
+    <!-- Post-It related sections -->
+
+    <!-- Create Post-It section-->
+    <section class="post-it-create post-hide" id="create-post-it-section">
+
+        <!-- add form for creating a new post-it -->
+        <form id='post-it-form'>
+
+            <!-- add input fields for title and content of post it note -->
+            <div class='row'>
+                <label for='title'>Title:</label>
+                <input id='title' name='title' placeholder='Enter title of post-it' required type='text'>
+            </div>
+
+            <div class='row'>
+                <label for='content'>Content:</label>
+                <textarea cols="50" id="content" name="content" rows="4" type=“text”required></textarea>
+            </div>
+
+
+            <!-- add buttons to save and cancel changes-->
+
+            <button type="submit"> Save Changes To Post-It</button>&emsp;|&emsp;
+            <button onclick="closeForm()"> Cancel Changes</button>
+
+        </form>
+
+        <script>
+            const form = document.getElementById('post-it-form');
+            const message = document.getElementById('message');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const title = document.getElementById('title').value;
+                const content = document.getElementById('content').value;
+                const data = {title, content};
+                fetch('/create-post-it', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        message.textContent = data.message;
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        message.textContent = 'Failed to create post-it.';
+                    });
+            });
+        </script>
+
+    </section>
+
+</div>
+
+</body>
+</html>

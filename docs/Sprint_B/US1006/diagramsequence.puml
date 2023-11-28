@@ -1,0 +1,25 @@
+@startuml
+title List Available Courses Sequence Diagram
+
+actor User
+participant CourseAvailableToMeUI
+participant CourseAvailableToMeController
+participant CoursesListService
+participant CourseRepository
+
+User -> CourseAvailableToMeUI: show()
+activate CourseAvailableToMeUI
+CourseAvailableToMeUI -> CourseAvailableToMeController: listAllCoursesAvailable()
+activate CourseAvailableToMeController
+CourseAvailableToMeController -> CoursesListService: getAvailableCourses()
+CoursesListService -> CourseRepository: getAvailableCourses()
+activate CourseRepository
+CourseRepository --> CoursesListService: getAvailableCourses()
+deactivate CourseRepository
+CoursesListService --> CourseAvailableToMeController: courses list
+deactivate CoursesListService
+CourseAvailableToMeController --> CourseAvailableToMeUI: courses list
+deactivate CourseAvailableToMeController
+deactivate CourseAvailableToMeUI
+
+@enduml

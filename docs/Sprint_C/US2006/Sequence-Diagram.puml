@@ -1,0 +1,50 @@
+@startuml
+
+actor Teacher
+
+Teacher -> ListExamsUI: doShow()
+activate ListExamsUI
+
+ListExamsUI -> ListGradesOfExamController: listGradesOfExamsOfAllCourses()
+activate ListGradesOfExamController
+
+ListGradesOfExamController -> CourseRepository: allCourses()
+activate CourseRepository
+CourseRepository --> ListGradesOfExamController: List<Course>
+deactivate CourseRepository
+
+loop for each course in courses
+    ListGradesOfExamController -> ExamRepository: getExamsByCourse(course)
+    activate ExamRepository
+    ExamRepository --> ListGradesOfExamController: List<Exam>
+    deactivate ExamRepository
+
+    loop for each exam in exams
+        ListGradesOfExamController -> ExamTakenRepository: getExamTakenByExam(exam)
+        activate ExamTakenRepository
+        ExamTakenRepository --> ListGradesOfExamController: List<ExamTaken>
+        deactivate ExamTakenRepository
+
+        loop for each examTaken in examTakens
+            ListGradesOfExamController -> examTaken :getStudent(mecanographicNumber)
+            activate examTaken
+            examTaken --> ListGradesOfExamController: mecanographicNumber
+            deactivate examTaken
+            ListGradesOfExamController -> examTaken: grade()
+            activate examTaken
+            examTaken --> ListGradesOfExamController: grade
+            deactivate examTaken
+            ListGradesOfExamController -> ListGradesOfExamController: append to StringBuilder
+            activate ListGradesOfExamController
+        end loop
+
+    end loop
+    ListGradesOfExamController --> ListExamsUI: StringBuilder
+    deactivate ListGradesOfExamController
+end loop
+    deactivate ListGradesOfExamController
+
+ListExamsUI --> Teacher: Show grades
+deactivate ListExamsUI
+
+@enduml

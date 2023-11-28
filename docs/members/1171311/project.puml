@@ -1,0 +1,63 @@
+@startuml Domain Model
+left to right direction
+
+ abstract User{ }
+ abstract Event{ }
+ Entity CourseClass{ }
+ Entity Student{ }
+ Entity Teacher{ }
+ Entity Manager{ }
+ Entity Course{ }
+ Entity Exam{ }
+ Entity ExamHistory{ }
+ Entity Board{ }
+ Entity PostIt{ }
+ Entity Meeting{ }
+ Entity Enrollment{ }
+ Entity schedule{ }
+ Entity Participant{ }
+ Entity ExtraClass{ }
+ Entity BoardHistory{ }
+ Class Grade{ }
+
+ Board "1" - "*" PostIt : has
+ Board "1" --> "*" User : has
+
+ CourseClass "*" -- "1" Course : has
+ CourseClass "1" -- "*" schedule : has
+
+ Enrollment "1" -- "1" Course : has
+
+ Event "1" <|-- "*" Meeting : as
+ Event "1" <|-- "*" CourseClass : as
+ Event "1" <|-- "*" ExtraClass : as
+ Event "1" - "*" schedule : is
+
+ Exam "*" --> "1" ExamHistory : belongs
+
+ ExamHistory *-- Grade
+
+ Manager "1" -- "*" Course : manages
+ Manager "1" -- "*" User : manages
+
+ Participant "*" - "*" Meeting: has
+
+ schedule "1"-- "*" Meeting : has
+
+ Student "1" -- "1" Enrollment : does
+ Student "1" --> "*" Exam : takes
+ Student "1" -> "*" ExamHistory : has
+
+ Teacher "*" - "1" Course : has
+ Teacher "1" -- "*" CourseClass : schedule
+ Teacher "1" -- "*" ExtraClass : schedule
+ User "1" -- "*" Meeting : schedule
+ Teacher "1" -- "*" Exam : creates
+
+ User "1" --> "*" Board : manages
+ User <|-- Participant : as
+ User <|-- Teacher : as
+ User <|-- Manager : as
+ User <|-- Student : as
+
+ @enduml

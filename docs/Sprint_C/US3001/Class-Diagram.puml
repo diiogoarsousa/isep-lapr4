@@ -1,0 +1,47 @@
+
+@startuml
+
+class SBPClient {
+    -socket: Socket
+    -input: BufferedReader
+    -output: PrintWriter
+    +startConnection(): boolean
+    +stopConnection(): void
+    -sendRequest(request: SBPMessageFormat): SBPMessageFormat
+}
+
+class SBPMessageFormat {
+    -code: int
+    -message: String
+    -data: String
+    +getCode(): int
+    +getMessage(): String
+    +getData(): String
+    +setCode(code: int): void
+    +setMessage(message: String): void
+    +setData(data: String): void
+}
+
+class SBPServer {
+    -serverSocket: ServerSocket
+    -clients: List<SBPClientHandler>
+    +start(): void
+    +stop(): void
+    +broadcast(message: SBPMessageFormat, sender: SBPClientHandler): void
+}
+
+class SBPClientHandler {
+    -clientSocket: Socket
+    -input: BufferedReader
+    -output: PrintWriter
+    +run(): void
+    +sendResponse(response: SBPMessageFormat): void
+    +getBoard(): SBPBoard
+}
+
+SBPClient -> SBPMessageFormat
+SBPClient -> SBPServer
+SBPServer -> SBPClientHandler
+SBPClientHandler -> SBPMessageFormat
+
+@enduml

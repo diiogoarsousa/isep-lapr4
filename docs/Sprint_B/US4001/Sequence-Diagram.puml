@@ -1,0 +1,79 @@
+@startuml
+
+skinparam SequenceMessageAlignment center
+autonumber
+actor "User" as USER
+
+participant ":ScheduleMeetingUI" as UI
+participant ":MyMeetingController" as CRTL
+participant ":MeetingRepository" as REP
+participant ":UserManagementService" as US
+
+USER -> UI : asks to schedule a Meeting
+activate UI
+UI -> USER : requests valid date
+deactivate UI
+
+USER -> UI :type requested data
+activate UI
+
+UI -> USER : requests valid hour
+deactivate UI
+
+USER -> UI :type requested data
+activate UI
+
+UI -> USER : requests valid duration
+deactivate UI
+
+USER -> UI :type requested data
+UI -> CRTL : myMeetingFor(MeetingDate)
+activate CRTL
+CRTL -> REP: findByDayAndUser(MeetingDate, SystemUser)
+activate REP
+REP -> CRTL : Result
+deactivate REP
+CRTL -> UI : Result
+deactivate CRTL
+UI -> CRTL : activeUsers()
+activate CRTL
+CRTL -> US : activeUsers()
+activate US
+US -> CRTL : activeUsersList
+deactivate US
+CRTL -> UI : activeUsersList
+deactivate CRTL
+UI -> USER : show users list \n and ask to select participants
+USER -> UI : select participant
+UI -> CRTL : inviteParticipantFor(MeetingDate, SystemUser)
+activate CRTL
+CRTL -> REP : findByDayAndUser(MeetingDate, SystemUser)
+activate REP
+REP -> CRTL : Result
+deactivate REP
+CRTL -> UI : Result
+deactivate CRTL
+UI -> CRTL : scheduleMeeting(duration, date, participants)
+activate CRTL
+
+CRTL -> REP : save(Meeting)
+activate REP
+REP -> CRTL : Result
+deactivate REP
+CRTL -> UI : Result
+deactivate CRTL
+UI -> USER : Result
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

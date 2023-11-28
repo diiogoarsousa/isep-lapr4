@@ -1,0 +1,7 @@
+Title "Cultura Geral"
+Feedback ON_SUBMISSION
+Grade ON_SUBMISSION
+ Description "none"
+ { Description "True False" TRUE_FALSE "A capital da Franca e Paris" "True" 10 "True"
+ }
+ END

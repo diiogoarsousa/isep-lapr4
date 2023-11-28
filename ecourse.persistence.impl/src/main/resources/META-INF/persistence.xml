@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+    <persistence-unit name="eapli.base">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>eapli.framework.infrastructure.authz.domain.model.Role</class>
+        <class>eapli.framework.infrastructure.authz.domain.model.RoleAssignment</class>
+        <class>eapli.framework.infrastructure.authz.domain.model.RoleSet</class>
+        <class>eapli.framework.infrastructure.authz.domain.model.SystemUser</class>
+
+
+        <class>ecourse.boardManagement.domain.Board</class>
+        <class>ecourse.boardManagement.domain.BoardParticipant</class>
+        <class>ecourse.boardManagement.domain.BoardState</class>
+        <class>ecourse.boardManagement.domain.PostIt</class>
+        <class>ecourse.courseClassManagement.domain.CourseClass</class>
+        <class>ecourse.courseManagement.domain.Course</class>
+        <class>ecourse.courseManagement.domain.CourseState</class>
+        <class>ecourse.examManagement.domain.Exam</class>
+        <class>ecourse.examManagement.domain.Header</class>
+        <class>ecourse.examManagement.domain.Question</class>
+        <class>ecourse.examManagement.domain.Section</class>
+        <class>ecourse.examTaken.domain.ExamTaken</class>
+        <class>ecourse.requestEnrollment.domain.Enrollment</class>
+        <class>ecourse.scheduleMeeting.domain.Meeting</class>
+        <class>ecourse.scheduleMeeting.domain.MeetingParticipant</class>
+        <class>ecourse.studentManagement.domain.SignupRequest</class>
+        <class>ecourse.teacherAssignmentManagement.domain.TeacherAssignment</class>
+        <class>ecourse.userManagement.domain.Manager</class>
+        <class>ecourse.userManagement.domain.Student</class>
+        <class>ecourse.userManagement.domain.Teacher</class>
+
+        <properties>
+            <!--↓ DATABASE CONFIGURATION ↓-->
+            <property name="javax.persistence.jdbc.url" value="databaseURL"/>
+            <property name="javax.persistence.jdbc.user" value="user"/>
+            <property name="javax.persistence.jdbc.password" value="userPassword"/>
+            <!--↑ DATABASE CONFIGURATION ↑-->
+
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+            <!-- <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/> -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <!--↓ DEBUG OPTIONS ↓-->
+            <!--            <property name="hibernate.show_sql" value="true"/>-->
+            <!--            <property name="hibernate.format_sql" value="true"/>-->
+            <!--            <property name="hibernate.use_sql_comments" value="true"/>-->
+            <!--↑ DEBUG OPTIONS ↑-->
+        </properties>
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,84 @@
+@startuml
+
+actor Manager
+participant OpenCloseEnrollmentsMenu
+participant OpenCloseEnrollmentsController
+participant ListCourseToEnrollmentService
+participant CourseRepository
+participant CloseEnrollmentsUI
+participant OpenEnrollmentsUI
+
+Manager -> OpenCloseEnrollmentsMenu: Open/Close enrollments
+activate OpenCloseEnrollmentsMenu
+
+OpenCloseEnrollmentsMenu -> OpenCloseEnrollmentsController: Request to change enrollments
+activate OpenCloseEnrollmentsController
+
+OpenCloseEnrollmentsController -> ListCourseToEnrollmentService: allCourses()
+activate ListCourseToEnrollmentService
+ListCourseToEnrollmentService -> CourseRepository: allCourses()
+activate CourseRepository
+CourseRepository --> ListCourseToEnrollmentService: Course data
+deactivate CourseRepository
+ListCourseToEnrollmentService --> OpenCloseEnrollmentsController: List of courses
+deactivate ListCourseToEnrollmentService
+
+alt Manager chooses to close enrollments
+    OpenCloseEnrollmentsController -> CloseEnrollmentsUI: Display courses for closing enrollments
+    activate CloseEnrollmentsUI
+    CloseEnrollmentsUI -> OpenCloseEnrollmentsController: Selected course to close enrollments
+    deactivate CloseEnrollmentsUI
+
+    OpenCloseEnrollmentsController -> ListCourseToEnrollmentService: findCourseByStateInEnrollments()
+    activate ListCourseToEnrollmentService
+    ListCourseToEnrollmentService -> CourseRepository: findCourseByStateInEnrollments
+    activate CourseRepository
+    CourseRepository --> ListCourseToEnrollmentService: Course data
+    deactivate CourseRepository
+    ListCourseToEnrollmentService --> OpenCloseEnrollmentsController: Found course
+    deactivate ListCourseToEnrollmentService
+
+    OpenCloseEnrollmentsController -> CloseEnrollmentsUI: Display confirmation to close enrollments
+    activate CloseEnrollmentsUI
+    CloseEnrollmentsUI -> OpenCloseEnrollmentsController: Confirmation to close enrollments
+    deactivate CloseEnrollmentsUI
+
+    OpenCloseEnrollmentsController -> CourseRepository: changeCourseState()
+    activate CourseRepository
+    CourseRepository --> OpenCloseEnrollmentsController: Course state changed
+    deactivate CourseRepository
+
+else Manager chooses to open enrollments
+    OpenCloseEnrollmentsController -> OpenEnrollmentsUI: Display courses for opening enrollments
+    activate OpenEnrollmentsUI
+    OpenEnrollmentsUI -> OpenCloseEnrollmentsController: Selected course to open enrollments
+    deactivate OpenEnrollmentsUI
+
+    OpenCloseEnrollmentsController -> ListCourseToEnrollmentService: findCourseByStateInEnrollments()
+    activate ListCourseToEnrollmentService
+    ListCourseToEnrollmentService -> CourseRepository: findCourseByStateInEnrollments()
+    activate CourseRepository
+    CourseRepository --> ListCourseToEnrollmentService: Course data
+    deactivate CourseRepository
+    ListCourseToEnrollmentService --> OpenCloseEnrollmentsController: Found course
+    deactivate ListCourseToEnrollmentService
+
+    OpenCloseEnrollmentsController -> OpenEnrollmentsUI: Display confirmation to open enrollments
+    activate OpenEnrollmentsUI
+    OpenEnrollmentsUI -> OpenCloseEnrollmentsController: Confirmation to open enrollments
+    deactivate OpenEnrollmentsUI
+
+    OpenCloseEnrollmentsController -> CourseRepository: changeCourseState()
+    activate CourseRepository
+    CourseRepository --> OpenCloseEnrollmentsController: Course state changed
+    deactivate CourseRepository
+
+    end
+
+    OpenCloseEnrollmentsController --> OpenCloseEnrollmentsMenu: Enrollments opened/closed successfully
+    deactivate OpenCloseEnrollmentsController
+    OpenCloseEnrollmentsMenu --> Manager: Display success message
+    deactivate OpenCloseEnrollmentsMenu
+
+    @enduml
+

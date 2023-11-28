@@ -1,0 +1,92 @@
+@startuml
+       title SD - Enroll Bulk Students
+
+       actor Manager as actor
+       participant "EnrollBulkUI" as ui <<presentation>>
+       participant "EnrollBulkController" as ctrl <<application>>
+       participant "EnrollBulkStudentService" as service <<service>>
+       participant "PersistenceContext" as pc <<persistence>>
+       participant "CourseRepository" as repo <<repository>>
+       participant "Course" as course <<domain>>
+       participant "StudentRepository" as srepo <<repository>>
+       participant "Student" as student <<domain>>
+
+       actor -> ui: Open Enroll Bulk form
+       activate ui
+
+       ui -> ctrl: enrollBulkStudents(course id, file path)
+       deactivate ui
+
+       deactivate ui
+       activate ctrl
+
+       ctrl -> service: enrollBulkStudents(course id, file path)
+
+       activate service
+       service -> pc: getPersistenceContext()
+       deactivate service
+       activate pc
+       pc --> service: persistenceContext
+       deactivate pc
+       activate service
+
+       service -> repo: getCourseRepository()
+       deactivate service
+       activate repo
+       repo --> service: courseRepository
+       deactivate repo
+       activate service
+
+       service -> courseRepository: getCourse(course id)
+       deactivate service
+       activate courseRepository
+       courseRepository --> service: course
+       deactivate courseRepository
+       activate service
+
+       service -> service: validateCourse(course)
+       activate service
+       deactivate service
+
+       service -> srepo: getStudentRepository()
+       deactivate service
+       activate srepo
+       srepo --> service: studentRepository
+       deactivate srepo
+       activate service
+
+       service -> studentRepository: getRegisteredStudents()
+       deactivate service
+       activate studentRepository
+       studentRepository --> service: registeredStudents
+       deactivate studentRepository
+       activate service
+
+       service -> service: validateStudents(registeredStudents, file path)
+       activate service
+       deactivate service
+
+       service -> service: enrollStudents(course, validStudents)
+       activate service
+       deactivate service
+
+       service -> courseRepository: save(course)
+       deactivate service
+       activate courseRepository
+       courseRepository --> service: message
+       deactivate courseRepository
+       activate service
+
+       deactivate service
+       service --> ctrl: message
+       deactivate service
+
+       activate ctrl
+       ctrl --> ui: message
+       deactivate ctrl
+
+       activate ui
+         ui -> actor: Show Enrollment Success
+
+       deactivate ui
+       @enduml

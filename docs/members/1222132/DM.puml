@@ -1,0 +1,53 @@
+@startuml
+'https://plantuml.com/class-diagram
+left to right direction
+Entity User{
+}
+Entity CourseClass{
+}
+Entity Student{
+}
+User "1"-- "*" Student : has
+Entity Teacher{
+}
+User "1"-- "*" Teacher : has
+Entity Manager{
+}
+User "1"-- "*" Manager : has
+Manager "1"-- "*" User : manage
+User "1"-- "*" Teacher : has
+Entity Course{
+}
+Manager "1"-- "*" Course : manage
+Entity Exam{
+}
+Student "1"-- "*" Exam : takes
+Entity ExamTaken{
+}
+Entity Board{
+}
+User "1"-- "*" Board : manage
+Entity Postit{
+}
+Entity Meetings{
+}
+Entity Enrollment{
+}
+'Entity ExamSchedule{
+'}
+Entity Participants{
+}
+User "*"-- "*" Participants : has
+
+
+
+Participants "*"-- "*" Meetings : has
+Board "1"-- "*" Postit : has
+Teacher "1"-- "*" Exam : creates
+Exam "1"-- "*" ExamTaken : takes
+Student "1"-- "1" Enrollment : has
+Enrollment "1"-- "1" Course : has
+Teacher "*"-- "1" Course : has
+Teacher "1"-- "*" CourseClass : schedule
+CourseClass "*"-- "1" Course : has
+@enduml

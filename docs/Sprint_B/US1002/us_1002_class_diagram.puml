@@ -1,0 +1,91 @@
+@startuml
+
+
+class CreateCourseUi {
+    createCourse(courseName, courseState, startDate, endDate, minEnrolments, maxEnrolments, headTeacher, description)
+}
+
+class CreateCourseController {
+    - authz: AuthorizationService
+    - courseRepository: CourseRepository
+    - courseStateRepo: CourseStateRepository
+    - svcCourseStates: ListCourseStateService
+    - svcCourses: ListCourseService
+    createCourse(courseName, courseState, startDate, endDate, minEnrolments, maxEnrolments, headTeacher, description)
+    CourseStates()
+}
+
+interface CourseRepository {
+    save(course)
+    find(identifier)
+    delete(course)
+}
+
+class JpaCourseRepository {
+    save(course)
+    find(identifier)
+    delete(course)
+}
+
+class Course {
+    - identifier: UUID
+    - courseName: Designation
+    - courseState: CourseStateEnum
+    - startDate: Calendar
+    - endDate: Calendar
+    - minEnrolments: Integer
+    - maxEnrolments: Integer
+    - headTeacher: String
+    - description: Description
+    - active: boolean
+    + getCourse()
+    + toDTO()
+    + toRepresentation()
+    + toggleState()
+    + update()
+}
+
+class CourseBuilder {
+    withState()
+    named()
+    withStartDate()
+    withEndDate()
+    withMinEnrolments()
+    withMaxEnrolments()
+    withHeadTeacher()
+    build()
+}
+
+class CourseState {
+    - identifier: UUID
+    - name: String
+}
+
+enum CourseStateEnum {
+    close
+    open
+    enroll
+    in progress
+    closed
+}
+
+class CourseStartDate {
+    - date: Date
+    - time: Time
+}
+
+class CourseEndDate {
+    - date: Date
+    - time: Time
+}
+
+CreateCourseUi -> CreateCourseController
+CreateCourseController -> CourseBuilder
+CreateCourseController -> CourseState
+CourseStateEnum -> CourseState
+CreateCourseController -> CourseStartDate
+CreateCourseController -> CourseEndDate
+CreateCourseController -> CourseRepository
+CourseRepository -> JpaCourseRepository
+CreateCourseController -> Course
+@enduml

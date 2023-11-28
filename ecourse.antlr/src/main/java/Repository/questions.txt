@@ -1,0 +1,7 @@
+    TRUE_FALSE "O teorema de Pitágoras é usado para calcular a área de um triângulo retângulo." True 10
+    TRUE_FALSE "O teorema de Pitágoras é usado para calcular a área de um triângulo retângulo." True 10
+    TRUE_FALSE "O teorema de Pitágoras é usado para calcular a área de um triângulo retângulo." True 10
+
+
+
+

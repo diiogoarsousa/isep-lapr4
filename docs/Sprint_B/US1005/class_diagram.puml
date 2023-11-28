@@ -1,0 +1,76 @@
+@startuml
+
+
+class AuthenticationService <<service>> { }
+class Session <<value>> { }
+class Manager <<domain>> {}
+class User <<domain>> {}
+class SetCourseTeachersController <<application>>{
++getCourses()
++getTeachers()
++setCourse(course)
++setHeadTeacher(teacher)
++setTeacher(teacher)
++saveTeachersAssignments()
+ }
+class SetCourseTeachersUI <<presentation>>{
+
+}
+
+Interface PersistenceContext <<persistence>>{
++repositories()
+}
+
+class RepositoryFactory <<factory>>{
++courseRepository()
++teachersRepository()
++teacherAssignmentRepository()
+}
+
+class TeacherAssignmentRepository <<repository>>{
++save(newTeacherAssignment)
+ }
+
+class CourseRepository <<repository>>{
++findAllOpenCourses()
+}
+
+class TeacherRepository <<repository>>{
++findAllActiveTeachers()
+}
+
+class Course <<domain>>{
+}
+
+class Teacher <<domain>>{
+}
+
+class TeacherAssignment <<domain>>{
++TeacherAssignment(teacher, course, responsibility)
+}
+
+
+
+SetCourseTeachersUI .DOWN.> SetCourseTeachersController
+SetCourseTeachersController .DOWN.> Manager
+
+SetCourseTeachersController -DOWN-> TeacherAssignment
+SetCourseTeachersController -DOWN-> Teacher
+SetCourseTeachersController -DOWN-> Course
+
+SetCourseTeachersController .DOWN.> AuthenticationService
+SetCourseTeachersController .> PersistenceContext
+PersistenceContext -> RepositoryFactory
+RepositoryFactory --> TeacherAssignmentRepository
+RepositoryFactory --> CourseRepository
+RepositoryFactory --> TeacherRepository
+
+
+AuthenticationService .RIGHT.> Session
+AuthenticationService ..> User
+
+Session -RIGHT- Manager
+
+Manager "*" -- "1" User
+
+@enduml
